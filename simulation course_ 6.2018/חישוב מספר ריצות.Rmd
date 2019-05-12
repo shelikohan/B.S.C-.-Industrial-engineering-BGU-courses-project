@@ -1,0 +1,283 @@
+---
+title: "Calculate replications"
+author: sheli and nadav
+date: June 4, 2018
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# initial t-tests
+
+```{r}
+
+filePathDefects <- choose.files()
+Defects_in_argaz <- read.csv(filePathDefects,header=TRUE)
+
+filePathUtility <- choose.files()
+daily_utility <- read.csv(filePathUtility,header=TRUE)
+
+filePathProfit <- choose.files()
+daily_profit <- read.csv(filePathProfit,header=TRUE)
+
+```
+
+
+
+# average defects in argaz per replication
+
+### existing situation
+```{r}
+test1 <-  t.test(x= Defects_in_argaz$existing.situation ,y=NULL,alternative ="two.sided",conf.level=0.97)
+print(test1)
+ci1 <-  c(test1$conf.int[1],test1$conf.int[2])
+print(ci1)
+meanFlow1 <- test1$estimate
+delta1 <- test1$conf.int[2]-meanFlow1
+print(delta1)
+precise1 <-  delta1/meanFlow1
+paste0("the relative accuracy for average defects in argaz per replication for existing situation is: ",  precise1)
+```
+
+### alternative1
+```{r}
+test2 <-  t.test(x= Defects_in_argaz$alternative1 ,y=NULL,alternative ="two.sided",conf.level=0.97)
+print(test2)
+ci2 <-  c(test2$conf.int[1],test2$conf.int[2])
+print(ci2)
+meanFlow2 <- test2$estimate
+delta2 <- test2$conf.int[2]-meanFlow2
+print(delta2)
+precise2 <-  delta2/meanFlow2
+paste0("the relative accuracy for average defects in argaz per replication for alternative1 is: ",  precise2)
+
+```
+### alternative2
+```{r}
+test3 <-  t.test(x= Defects_in_argaz$alternative2 ,y=NULL,alternative ="two.sided",conf.level=0.97)
+print(test3)
+ci3 <-  c(test3$conf.int[1],test3$conf.int[2])
+print(ci3)
+meanFlow3 <- test3$estimate
+delta3 <- test3$conf.int[2]-meanFlow3
+print(delta3)
+precise3 <-  delta3/meanFlow3
+paste0("the relative accuracy for average defects in argaz per replication for alternative2 is: ",  precise3)
+
+```
+
+# average daily workers utility
+
+### existing situation
+```{r}
+test4 <-  t.test(x= daily_utility$existing.situation ,y=NULL,alternative ="two.sided",conf.level=0.97)
+print(test4)
+ci4 <-  c(test4$conf.int[1],test4$conf.int[2])
+print(ci4)
+meanFlow4 <- test4$estimate
+delta4 <- test4$conf.int[2]-meanFlow4
+print(delta4)
+precise4 <-  delta4/meanFlow4
+paste0("the relative accuracy for average daily workers utility for existing situation is: ",  precise4)
+```
+##חורג מהדיוק היחסי - 0.074
+### alternative1
+```{r}
+test5 <-  t.test(x= daily_utility$alternative1 ,y=NULL,alternative ="two.sided",conf.level=0.97)
+print(test5)
+ci5 <-  c(test5$conf.int[1],test5$conf.int[2])
+print(ci5)
+meanFlow5 <- test5$estimate
+delta5 <- test5$conf.int[2]-meanFlow5
+print(delta5)
+precise5 <-  delta5/meanFlow5
+paste0("the relative accuracy for average daily workers utility for alternative1 is: ",  precise5)
+```
+# חורג מהדיוק היחסי - 0.074
+### alternative2
+```{r}
+test6 <-  t.test(x= daily_utility$alternative2 ,y=NULL,alternative ="two.sided",conf.level=0.97)
+print(test6)
+ci6 <-  c(test6$conf.int[1],test6$conf.int[2])
+print(ci6)
+meanFlow6 <- test6$estimate
+delta6 <- test6$conf.int[2]-meanFlow6
+print(delta6)
+precise6 <-  delta6/meanFlow6
+paste0("the relative accuracy for average daily workers utility for alternative2 is: ",  precise6)
+```
+##חורג מהדיוק היחסי - 0.074
+# avarage daily profit
+
+### existing situation
+```{r}
+test7 <-  t.test(x= daily_profit$existing.situation ,y=NULL,alternative ="two.sided",conf.level=0.97)
+print(test7)
+ci7 <-  c(test7$conf.int[1],test7$conf.int[2])
+print(ci7)
+meanFlow7 <- test7$estimate
+delta7 <- test7$conf.int[2]-meanFlow7
+print(delta7)
+precise7 <-  abs(delta7/meanFlow7)
+paste0("the relative accuracy for avarage daily profit for existing situation is: ",  precise7)
+```
+### alternative1
+```{r}
+test8 <-  t.test(x= daily_profit$alternative1 ,y=NULL,alternative ="two.sided",conf.level=0.97)
+print(test8)
+ci8 <-  c(test8$conf.int[1],test8$conf.int[2])
+print(ci8)
+meanFlow8 <- test8$estimate
+delta8 <- test8$conf.int[2]-meanFlow8
+print(delta8)
+precise8 <-  abs(delta8/meanFlow8)
+paste0("the relative accuracy for avarage daily profit for alternative1 is: ",  precise8)
+```
+##חורג מהדיוק היחסי - 0.074
+### alternative2
+```{r}
+test9 <-  t.test(x= daily_profit$alternative2 ,y=NULL,alternative ="two.sided",conf.level=0.97)
+print(test9)
+ci9 <-  c(test9$conf.int[1],test9$conf.int[2])
+print(ci9)
+meanFlow9 <- test9$estimate
+delta9 <- test9$conf.int[2]-meanFlow9
+print(delta9)
+precise9 <-  abs(delta9/meanFlow9)
+paste0("the relative accuracy for avarage daily profit for alternative2 is: ",  precise9)
+```
+##חורג מהדיוק היחסי - 0.074
+#קירוב גס calculation requiered numbe of replication.first time
+```{r}
+z <- (meanFlow4*0.074)
+print(z)
+kamut_rizot_existing_situation <- 30*(delta4/z)^2
+paste0("the number of required replication for existing situation is:", kamut_rizot_existing_situation)
+
+x <- (meanFlow8*0.074)
+print(x)
+kamut_rizot_alternative1_a <- 30*(delta8/x)^2
+paste0("the number of required replication for alternative1 is:", kamut_rizot_alternative1_a)
+
+v <- (meanFlow6*0.074)
+print(v)
+kamut_rizot_alternative1_b <- 30*(delta6/v)^2
+paste0("the number of required replication for alternative1 is:", kamut_rizot_alternative1_b)
+
+
+y <- (meanFlow9*0.074)
+print(y)
+kamut_rizot_alternative2_b <- 30*(delta9/y)^2
+paste0("the number of required replication for alternative2 is:", kamut_rizot_alternative2_b)
+
+
+w <- (meanFlow6*0.074)
+print(w)
+kamut_rizot_alternative2_a <- 30*(delta6/w)^2
+paste0("the number of required replication for alternative2 is:", kamut_rizot_alternative2_a)
+
+```
+
+as a result we chose 271 replication for alternative1 and 107 replication for alternative 2, and 32 for existing situation. We chose max replications for each alternative.
+```{r}
+filePathUtility_2 <- choose.files()
+daily_utility_2 <- read.csv(filePathUtility_2,header=TRUE)
+filePathProfit_2 <- choose.files()
+daily_profit_2 <- read.csv(filePathProfit_2,header=TRUE)
+```
+
+```{r}
+test10 <-  t.test(x= daily_profit_2$alternative1 ,y=NULL,alternative ="two.sided",conf.level=0.97)
+print(test10)
+ci10 <-  c(test10$conf.int[1],test10$conf.int[2])
+print(ci10)
+meanFlow10 <- test10$estimate
+delta10 <- test10$conf.int[2]-meanFlow10
+print(delta10)
+precise10 <-  abs(delta10/meanFlow10)
+paste0("the relative accuracy for avarage daily profit for alternative1 is: ",  precise10)
+```
+עמד בדיוק היחסי
+```{r}
+test11 <-  t.test(x= daily_utility_2$existing.situation ,y=NULL,alternative ="two.sided",conf.level=0.97)
+print(test11)
+ci11 <-  c(test11$conf.int[1],test11$conf.int[2])
+print(ci11)
+meanFlow11 <- test11$estimate
+delta11 <- test11$conf.int[2]-meanFlow11
+print(delta11)
+precise11 <-  abs(delta11/meanFlow11)
+paste0("the relative accuracy for daily utility for existing situation is: ",  precise11)
+```
+לא עמד בדיוק היחסי
+```{r}
+test12 <-  t.test(x= daily_profit_2$alternative2 ,y=NULL,alternative ="two.sided",conf.level=0.97)
+print(test12)
+ci12 <-  c(test12$conf.int[1],test12$conf.int[2])
+print(ci12)
+meanFlow12 <- test12$estimate
+delta12 <- test12$conf.int[2]-meanFlow12
+print(delta12)
+precise12 <-  abs(delta12/meanFlow12)
+paste0("the relative accuracy for avarage daily profit for alternative2 is: ",  precise12)
+```
+עמד בדיוק היחסי
+```{r}
+test13 <-  t.test(x= daily_utility_2$alternative2 ,y=NULL,alternative ="two.sided",conf.level=0.97)
+print(test13)
+ci13 <-  c(test13$conf.int[1],test13$conf.int[2])
+print(ci13)
+meanFlow13 <- test13$estimate
+delta13 <- test13$conf.int[2]-meanFlow13
+print(delta13)
+precise13 <-  abs(delta13/meanFlow13)
+paste0("the relative accuracy for daily utility for alternative2 situation is: ",  precise13)
+```
+עמד בדיוק היחסי
+```{r}
+test14 <-  t.test(x= daily_utility_2$alternative1 ,y=NULL,alternative ="two.sided",conf.level=0.97)
+print(test14)
+ci14 <-  c(test14$conf.int[1],test14$conf.int[2])
+print(ci14)
+meanFlow14 <- test14$estimate
+delta14 <- test14$conf.int[2]-meanFlow14
+print(delta14)
+precise14 <-  abs(delta14/meanFlow14)
+paste0("the relative accuracy for daily utility for alternative1 situation is: ",  precise14)
+```
+עמד בדיוק היחסי
+
+##כיוון שמדד נצילות עבר המצב הקיים לא עמד בדיוק היחסי נבצע איטרציה נוספת של חישוב מספר ריצות נדרש:
+```{r}
+z2 <- (meanFlow11*0.074)
+print(z2)
+kamut_rizot_alternative4 <- 32*(delta11/z2)^2
+paste0("the number of required replication for existing situation is:", kamut_rizot_alternative4)
+
+```
+###נבדוק את הדיוק היחסי עבור חלופה זו ב34 ריצות :
+
+```{r}
+filePathUtility_3 <- choose.files()
+daily_utility_3 <- read.csv(filePathUtility_3,header=TRUE)
+```
+
+
+```{r}
+test15 <-  t.test(x= daily_utility_3$existing.situation ,y=NULL,alternative ="two.sided",conf.level=0.97)
+print(test15)
+ci15 <-  c(test15$conf.int[1],test15$conf.int[2])
+print(ci15)
+meanFlow15 <- test15$estimate
+delta15 <- test15$conf.int[2]-meanFlow15
+print(delta15)
+precise15 <-  abs(delta15/meanFlow15)
+paste0("the relative accuracy for daily utility for existing situation is: ",  precise15)
+```
+עמד בדיוק היחסי
+
+#לסיכום, על מנת לעמוד בדיוק היחסי נבחר להריץ את המצב הקיים 34 ריצות, את חלופה 1 271 ריצות ואת חלופה 2 107 ריצות. 

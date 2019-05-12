@@ -1,0 +1,93 @@
+---
+title: "welch t-tests"
+author: sheli and nanav
+date: June 4, 2018
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+---
+ 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+
+filePathDefects <- choose.files()
+Defects_in_argaz <- read.csv(filePathDefects,header=TRUE)
+
+filePathUtility <- choose.files()
+daily_utility <- read.csv(filePathUtility,header=TRUE)
+
+filePathProfit <- choose.files()
+daily_profit <- read.csv(filePathProfit,header=TRUE)
+
+```
+
+
+#רווח סמך ממוצע פגומים בארגז תקין מצב קיים וחלופה 1 
+```{r}
+Welchtest1 <-  t.test(x= Defects_in_argaz$existing.situation  ,y=Defects_in_argaz$alternative1,alternative ="two.sided",paired=FALSE,var.equal=FALSE,conf.level=0.99)
+ print(Welchtest1)
+ 
+```
+
+ 
+#2 רווח סמך ממוצע פגומים בארגז תקין מצב קיים וחלופה 
+
+```{r}
+Welchtest2 <-  t.test(x= Defects_in_argaz$existing.situation  ,y=Defects_in_argaz$alternative2,alternative ="two.sided",paired=FALSE,var.equal=FALSE,conf.level=0.99)
+ print(Welchtest2)
+```
+ 
+#רווח סמך ממוצע פגומים בארגז תקין חלופה 1 וחלופה 2
+
+```{r}
+Welchtest3 <-  t.test(x= Defects_in_argaz$alternative1  ,y=Defects_in_argaz$alternative2,alternative ="two.sided",paired=FALSE,var.equal=FALSE,conf.level=0.99)
+ print(Welchtest3)
+``` 
+
+
+#רווח סמך נצילות עובדים ממוצעת ליום מצב קיים וחלופה 1
+
+```{r}
+Welchtest4 <-  t.test(x= daily_utility$existing.situation ,y=daily_utility$alternative1,alternative ="two.sided",paired=FALSE,var.equal=FALSE,conf.level=0.99)
+ print(Welchtest4)
+``` 
+
+#רווח סמך נצילות עובדים ממוצעת ליום מצב קיים וחלופה 2
+
+```{r}
+Welchtest5 <-  t.test(x= daily_utility$existing.situation ,y=daily_utility$alternative2,alternative ="two.sided",paired=FALSE,var.equal=FALSE,conf.level=0.99)
+ print(Welchtest5)
+``` 
+
+#רווח סמך נצילות עובדים ממוצעת ליום חלופה 1 וחלופה 2
+
+```{r}
+Welchtest6 <-  t.test(x= daily_utility$alternative1 ,y=daily_utility$alternative2,alternative ="two.sided",paired=FALSE,var.equal=FALSE,conf.level=0.99)
+ print(Welchtest6)
+``` 
+ 
+ 
+#רווח סמך רווח ממוצע ליום מצב קיים וחלופה 1
+```{r}
+Welchtest7 <-  t.test(x= daily_profit$existing.situation ,y=daily_profit$alternative1,alternative ="two.sided",paired=FALSE,var.equal=FALSE,conf.level=0.99)
+ print(Welchtest7)
+``` 
+
+
+#רווח סמך רווח ממוצע ליום מצב קיים וחלופה 2
+
+```{r}
+Welchtest8 <-  t.test(x= daily_profit$existing.situation ,y=daily_profit$alternative2,alternative ="two.sided",paired=FALSE,var.equal=FALSE,conf.level=0.99)
+ print(Welchtest8)
+``` 
+
+#רווח סמך רווח ממוצע ליום חלופה 1 וחלופה 2
+
+```{r}
+Welchtest9 <-  t.test(x= daily_profit$alternative1 ,y=daily_profit$alternative2,alternative ="two.sided",paired=FALSE,var.equal=FALSE,conf.level=0.99)
+ print(Welchtest9)
+``` 

@@ -1,0 +1,323 @@
+---
+title: "ML2 code 2019"
+output:
+  word_document: default
+  html_document: default
+---
+
+libraries
+```{r}
+library(randomForest)
+library(nnet)
+require(rpart)
+library(rpart.plot)
+library(caret)
+library(nnet)
+library(dummies)
+library(clue)
+library(cluster)
+library(factoextra)
+```
+#prepering data
+```{r}
+Data_input <- choose.files()
+Data <- read.csv(Data_input,header=TRUE)
+
+Data$day <- as.numeric(Data$day)
+Data$job <- as.numeric(Data$job)
+Data$marital <- as.numeric(Data$marital)
+Data$education <- as.numeric(Data$education)
+Data$default <- as.numeric(Data$default)
+Data$housing <- as.numeric(Data$housing)
+Data$loan <- as.numeric(Data$loan)
+Data$contact <- as.numeric(Data$contact)
+Data$poutcome <- as.numeric(Data$poutcome)
+Data$month <- as.numeric(Data$month)
+Data$y <- as.numeric(Data$y)
+Data$pdays <- as.numeric(Data$pdays)
+
+Data$age=scale(Data$age)
+Data$balance=scale(Data$balance)
+Data$campaign=scale(Data$campaign)
+Data$previous=scale(Data$previous)
+
+
+set.seed(123)
+sample_data <- Data[sample(nrow(Data)),]
+break1 = floor(nrow(sample_data)/8)
+break2 = floor(2*nrow(sample_data)/8)
+break3 = floor(3*nrow(sample_data)/8)
+break4 = floor(4*nrow(sample_data)/8)
+break5 = floor(5*nrow(sample_data)/8)
+break6 = floor(6*nrow(sample_data)/8)
+break7 = floor(7*nrow(sample_data)/8)
+break8 = nrow(sample_data)
+
+fold1 <-  sample_data[1:break1 , ]
+fold2 <-  sample_data[(break1+1):break2 ,]
+fold3 <-  sample_data[(break3+1):break4 ,]
+fold4 <-  sample_data[(break4+1):break5 ,]
+fold5 <-  sample_data[(break5+1):break6 ,]
+fold6 <-  sample_data[(break6+1):break7 ,]
+fold7 <- sample_data[(break6+1):break7 ,]
+test <- sample_data[(break7+1):break8 ,]
+
+train1 <- rbind(fold7,fold2,fold3,fold4,fold5,fold6) 
+val1 <- fold1
+train2 <- rbind(fold1,fold7,fold3,fold4,fold5,fold6) 
+val2 <- fold2
+train3 <- rbind(fold1,fold2,fold7,fold4,fold5,fold6) 
+val3 <- fold3
+train4 <- rbind(fold1,fold2,fold3,fold7,fold5,fold6) 
+val4 <- fold4
+train5 <- rbind(fold1,fold2,fold3,fold4,fold7,fold6) 
+val5 <- fold5
+train6 <- rbind(fold1,fold2,fold3,fold4,fold5,fold7) 
+val6 <- fold6
+train7 <- rbind(fold1,fold2,fold3,fold4,fold5,fold6) 
+val7 <- fold7
+
+train_x <-  list(train1[,1:15],train2[,1:15],train3[,1:15],train4[,1:15],train5[,1:15],train6[,1:15],train7[,1:15])
+train_y <- list(train1[,16],train2[,16],train3[,16],train4[,16],train5[,16],train6[,16],train7[,16])
+val_x <- list(val1[,1:15],val2[,1:15],val3[,1:15],val4[,1:15],val5[,1:15],val6[,1:15],val7[,1:15])
+val_y <- list(val1[,16],val2[,16],val3[,16],val4[,16],val5[,16],val6[,16],val7[,16])
+test_x <- test[,1:15]
+test_y <- test[,16]
+train_and_val <- rbind(train1,val1)
+train_and_val_x <- train_and_val[,1:15]
+train_and_val_y <- train_and_val[,16]
+```
+
+#decision tree
+#q1
+
+```{r}
+set.seed(123)
+train_and_val_tree = train_and_val
+train_and_val_x_tree = train_and_val_x
+train_and_val_y_tree = train_and_val_y
+
+for (i in c(2,3,4,5,7,8,9,10,11,13,15,16)){
+  train_and_val_tree[,i] = factor( train_and_val_tree[,i])
+}
+
+
+for (i in c(2,3,4,5,7,8,9,10,11,13,15)){
+  train_and_val_x_tree[,i] = factor( train_and_val_x_tree[,i])
+  test_x[,i] = factor(test_x[,i])
+}
+
+train_and_val_y_tree = factor(train_and_val_y_tree)
+test_y = factor(test_y)
+
+
+tree_model <- rpart(y~., data=train_and_val_tree,method= "class")
+
+```
+#q2
+```{r}
+set.seed(123)
+printcp(tree_model)
+trainError <- tree_model$cptable[6,"rel error"]*tree_model$parms$prior[1]
+plotcp(tree_model)
+rpart.plot(tree_model)
+opt <- which.min(tree_model$cptable[,"xerror"])
+cp <- tree_model$cptable[opt, "CP"]
+
+pruned_model <- prune(tree_model,cp)
+rpart.plot(pruned_model)
+
+tree_model$variable.importance
+
+```
+#q3
+```{r} 
+
+not_opt <- which.max(tree_model$cptable[,"xerror"])
+cp1 <- tree_model$cptable[not_opt, "CP"]
+cp2<-0
+cp3<-0.1
+
+cp_list <- c(cp,cp1,cp2,cp3)
+
+
+result_cp = data.frame(matrix(0,length(cp_list),4))
+names(result_cp) = c('cp','train_accuracy','test_accuracy')
+
+for (i in 1:length(cp_list)){
+  tree_model_ <- rpart(y~., data=train_and_val_tree,method= "class")
+  pruned_model_ <- prune(tree_model_,cp_list[i])
+  
+  predict_tree_train_<- predict(pruned_model_, newdata=train_and_val_x_tree) #prediction for train set 
+  predict_tree_train_ <-  predict_tree_train_[,2]
+  predict_tree_train_<- ifelse(predict_tree_train_<0.5,0,1)
+  accuracy_tree_train_= mean(predict_tree_train_==train_and_val_y_tree)
+  
+  predict_tree_test_<- predict(pruned_model_, newdata=test_x) #prediction for test set
+  predict_tree_test_ = predict_tree_test_[,2]
+  predict_tree_test_<- ifelse(predict_tree_test_<0.5,0,1)
+  accuracy_tree_test_= mean(predict_tree_test_==test_y)
+  result <- confusionMatrix(factor(predict_tree_test_),factor(test_y))
+  f1 = result$byClass[7]
+
+
+  
+  result_cp[i,1] = cp_list[i]
+  result_cp[i,2] = accuracy_tree_train_
+  result_cp[i,3] = accuracy_tree_test_
+  result_cp[i,4] = f1
+}
+
+```
+
+#q4
+```{r}
+tree_model <- rpart(y~., data=train_and_val_tree,method= "class")
+pruned_model <- prune(tree_model,cp_list[1])
+
+predict_tree_test<- predict(pruned_model, newdata=test_x)
+predict_tree_test = predict_tree_test[,2]
+predict_tree_test<- ifelse(predict_tree_test<0.5,0,1)
+accuracy_tree_test= mean(predict_tree_test==test_y)
+
+result <- confusionMatrix(factor(predict_tree_test),factor(test_y))
+print(result)
+
+result$byClass[7]
+
+#final decision tree
+#train run time
+start_time = Sys.time()
+tree_model <- rpart(y~., data=train_and_val_tree,method="class",cp = result_cp[(which.is.max(result_cp[,3])),1])
+end_time = Sys.time()
+tree_run_time_train = end_time-start_time
+
+#test run time
+start_time = Sys.time()
+pred_tree <-predict(tree_model,newdata = test_x)
+end_time = Sys.time()
+tree_run_time_test = end_time-start_time
+```
+
+#k-means
+#q2
+```{r}
+Data_kmeans = train_and_val_x
+Data_kmeans_test = test_x
+
+
+for (i in c(2,3,4,5,7,8,9,10,11,13,15)){
+  Data_kmeans[,i] = dummy(Data_kmeans[,i])
+  Data_kmeans_test[,i] = dummy(Data_kmeans_test[,i])
+  
+}
+
+kmeans_cluster = kmeans(Data_kmeans,2)
+
+```
+#q3
+```{r}
+
+kmeans_pred = cl_predict(kmeans_cluster,Data_kmeans_test)
+fviz_cluster(kmeans_cluster, data =Data_kmeans , geom = "point",
+             stand = FALSE, ellipse.type = "norm")
+kmeans_pred<- ifelse(kmeans_pred==2,0,1)
+accuracy_kmeans_test_=mean(test_y==factor(kmeans_pred))
+accuracy_kmeans_test_
+
+silhouetteBasicModels=silhouette(kmeans_cluster$cluster, dist(Data_kmeans))
+silhouetteBasicModels = mean(silhouetteBasicModels[, 3])
+silhouetteBasicModels
+
+```
+#q4
+```{r}
+k = rep(3:10)
+silhouette = rep(0,length(k))
+
+for (i in 1:length(k)){
+  kmeans_cluster_ = kmeans(Data_kmeans,k[i])
+  t = silhouette(kmeans_cluster_$cluster, dist(Data_kmeans))
+  t = mean(t[,3])
+  silhouette[i] =t
+}
+
+
+kmeans_cluster_ = kmeans(Data_kmeans,k[1])
+t = silhouette(kmeans_cluster_$cluster, dist(Data_kmeans))
+t = mean(t[, 3])
+
+which.is.max(silhouette)
+
+
+k = data.frame(k)
+silhouette = data.frame(silhouette)
+names(k) = names(silhouette)
+
+
+result_kmeans =cbind(k,silhouette)
+names(result_kmeans) = c('k','silhouette')
+ 
+
+#train run time
+start_time = Sys.time()
+kmeans_cluster <- kmeans(Data_kmeans,2)
+end_time = Sys.time()
+kmeans_run_time_train = end_time-start_time
+
+#cluster run time
+start_time = Sys.time()
+kmeans_pred <-cl_predict(kmeans_cluster,Data_kmeans_test)
+end_time = Sys.time()
+run_time_cluster = end_time-start_time
+
+```
+
+#additional model- bonus
+```{r}
+set.seed(123)
+train_and_val_y = factor(train_and_val_y)
+start_time = Sys.time()
+randomForest_model=randomForest(train_and_val_x_tree,train_and_val_y_tree,ntree = 70,type = "classification")
+
+end_time = Sys.time()
+run_time_forest_train = end_time-start_time
+start_time = Sys.time()
+pred_RF = predict(randomForest_model,newdata = test_x,type = "class")
+end_time = Sys.time()
+run_time_forest_test = end_time-start_time
+
+accuracy_RF_test = mean(pred_RF==test_y)
+accuracy_RF_test
+confusion_matrix <- confusionMatrix(pred_RF,factor(test_y))
+```
+
+#final choose - ranfomForest
+```{r}
+
+x_test <- choose.files()
+x_test <- read.csv(x_test,header=TRUE)
+
+x_test$day <- factor(as.numeric(x_test$day))
+x_test$job <- factor(as.numeric(x_test$job))
+x_test$marital <- factor(as.numeric(x_test$marital))
+x_test$education <- factor(as.numeric(x_test$education))
+x_test$default <- factor(as.numeric(x_test$default))
+x_test$housing <- factor(as.numeric(x_test$housing))
+x_test$loan <- factor(as.numeric(x_test$loan))
+x_test$contact <- factor(as.numeric(x_test$contact))
+x_test$poutcome <- factor(as.numeric(x_test$poutcome))
+x_test$month <- factor(as.numeric(x_test$month))
+x_test$pdays <- factor(as.numeric(x_test$pdays))
+
+
+total_data_x <- rbind(train_and_val_x_tree,test_x)
+total_data_y <- factor(Data$y)
+final_model = randomForest(total_data_x,total_data_y,ntree = 70,type = "classification")
+
+y_prediction_x_test = predict(final_model, newdata = x_test,type = "class")
+
+write.csv(y_prediction_x_test,file= "C:/Users/Sheli/Desktop/y_test.csv")
+
+
+```

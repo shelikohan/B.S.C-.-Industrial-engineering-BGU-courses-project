@@ -1,0 +1,361 @@
+---
+title: "R נספח קוד"
+author: Sheli and Lior
+date: December 11, 2018
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+---
+
+התקנת חבילות
+# ```{r}
+# install.packages("corrplot")
+# install.packages("ggplot2")
+# install.packages("reshape")
+# install.packages("sqldf")
+# install.packages("mice")
+# install.packages("sm")
+# install.packages("readr")
+# install.packages("sqldf")
+# install.packages("corrplot")
+# install.packages("Amelia")
+```
+טעינת ספריות
+```{r}
+
+library(readr)
+library(MASS)
+library(fitdistrplus)
+library(magrittr)
+library(dplyr)
+library(lazyeval)
+library(parallel)
+library(e1071)
+library(plotly)
+library(ggplot2)
+library(triangle)
+library(knitr)
+library(fitdistrplus)
+library(magrittr)
+library(reshape)
+library(corrplot)
+library("sqldf")
+library("mice")
+library(sm)
+library(corrplot)
+library("Amelia")
+
+```
+#טעינת בסיס נתונים 
+```{r}
+Data_input <- choose.files()
+Data <- read.csv(Data_input,header=TRUE)
+n=nrow(Data)
+```
+##הבנת הנתונים
+#2. הסתברויות אפריוריות וקשרים בין מאפיינים
+חישוב הסתברויות אפריוריות - בדיד
+```{r}
+
+job <-  sqldf ("select job, count(*) as probability
+                    from Data
+                    group by job
+                    ")
+job$probability <- job$probability/ n
+
+
+education <-  sqldf ("select education,count(*) as probability
+                    from Data
+                    group by education
+                    ")
+education$probability <- education$probability/ n
+
+marital <-  sqldf ("select marital,count(*) as probability
+                    from Data
+                    group by marital
+                    ")
+marital$probability <- marital$probability/ n
+
+education <-  sqldf ("select education,count(*) as probability
+                    from Data
+                    group by education
+                    ")
+education$probability <- education$probability/ n
+
+default <-  sqldf ("select `default`,count(*) as probability
+                    from Data
+                    group by `default`
+                    ")
+default$probability <- default$probability/ n
+
+housing <-  sqldf ("select housing,count(*) as probability
+                    from Data
+                    group by housing
+                    ")
+housing$probability <- housing$probability/ n
+
+loan <-  sqldf ("select loan,count(*) as probability
+                    from Data
+                    group by loan
+                    ")
+loan$probability <- loan$probability/ n
+
+contact <-  sqldf ("select contact,count(*) as probability
+                    from Data
+                    group by contact
+                    ")
+contact$probability <- contact$probability/ n
+
+poutcome <-  sqldf ("select poutcome,count(*) as probability
+                    from Data
+                    group by poutcome
+                    ")
+poutcome$probability <- poutcome$probability/ n
+
+
+gender <-  sqldf ("select gender,count(*) as probability
+                    from Data
+                    group by gender
+                    ")
+gender$probability <- gender$probability/ n
+
+month <-  sqldf ("select month,count(*) as probability
+                    from Data
+                    group by month
+                    ")
+month$probability <- month$probability/ n
+
+day <-  sqldf ("select day,count(*) as probability
+                    from Data
+                    group by day
+                    ")
+day$probability <- day$probability/ n
+
+y  <- sqldf ("select y, count(*) as probability
+                    from Data
+                    group by y
+                    ")
+y$probability <- y$probability/ n
+
+```
+חישוב הסתברויות אפריוריות -רציף
+```{r}
+
+ ggplot(data=Data, aes(Data$age)) + 
+  geom_histogram(breaks=seq(20, 80, by = 2), 
+                 col="red", 
+                 fill="green", 
+                 alpha = .2) + 
+  labs(title="Histogram for Age") +
+  labs(x="Age", y="Count")+scale_x_continuous(breaks = pretty(Data$age, n = 10)) 
+
+
+ggplot(data=Data, aes(Data$balance)) + 
+  geom_histogram(breaks=seq(-1865,38126,by =350), 
+                 col="red", 
+                 fill="green", 
+                 alpha = .2) + 
+  labs(title="Histogram for Balance") +
+  labs(x="Balance", y="Count")+scale_x_continuous(breaks = pretty(Data$balance, n = 10)) 
+
+
+ggplot(data=Data, aes(Data$campaign)) + 
+  geom_histogram(breaks=seq(1,58,by = 2), 
+                 col="red", 
+                 fill="green", 
+                 alpha = .2) + 
+  labs(title="Histogram for Campaign") +
+  labs(x="Campaign", y="Count")+scale_x_continuous(breaks = pretty(Data$campaign, n = 10)) 
+
+ggplot(data=Data, aes(Data$pday)) + 
+  geom_histogram(breaks=seq(-1,854,by =15), 
+                 col="red", 
+                 fill="green", 
+                 alpha = .2) + 
+  labs(title="Histogram for Pday") +
+  labs(x="Pday", y="Count")+scale_x_continuous(breaks = pretty(Data$pday, n = 10)) 
+
+ggplot(data=Data, aes(Data$previous)) + 
+  geom_histogram(breaks=seq(0,32,by = 1), 
+                 col="red", 
+                 fill="green", 
+                 alpha = .2) + 
+  labs(title="Histogram for Previous") +
+  labs(x="Previous", y="Count")+scale_x_continuous(breaks = pretty(Data$previous, n = 10)) 
+
+
+ggplot(Data, aes(x=Data$month)) +
+  geom_bar(fill="steelblue")+labs(title = "Histogram for month",x ="month")
+
+
+ggplot(Data, aes(x=Data$day)) +
+  geom_bar(fill="steelblue")+labs(title = "Histogram for day",x ="day")
+
+
+```
+קשר בין משתנים מסבירים
+קשר בין משתנים בדידים בעזרת מדד קרמר
+```{r}
+
+CatData = Data[,c(2,3,4,5,7,8,9,10,11,15,16,17)]
+x2 = chisq.test(CatData[,1],CatData[,1])
+CramerMat <- matrix(ncol = length(CatData), nrow = length(CatData))
+
+for (i in 1:nrow(CatData)){
+  for (j in 1:ncol(CatData)){
+    r = length(unique(CatData[,i]))
+    c = length(unique(CatData[,j]))
+    x2 = chisq.test(CatData[,i],CatData[,j])
+    x2 = unname(x2$statistic)
+    CramerMat[i,j]=sqrt((x2/n)/min(c-1,r-1))
+  }
+}
+colnames(CramerMat) = c("job","marital","education", "default","housing","loan","contact","day","month","poutcome","gender","y")
+rownames(CramerMat) = c("job","marital","education", "default","housing","loan","contact","day","month","poutcome","gender","y")
+corrplot.mixed(CramerMat, lower.col = "black",tl.cex=0.57, number.cex = .7)
+```
+קשר בין משתנים רציפים לבדידים - box plot
+```{r}
+boxplot(Data$age~Data$education,data=Data, main="Education dependency in age", 
+  	xlab="education", ylab="age")
+boxplot(Data$pdays~Data$y,data=Data, main="y dependency in pdays", 
+  	xlab="y", ylab="pdays")
+
+```
+קשר בין משתנים רציפים בעזרת מקדם מתאם פירסון
+```{r}
+plot(x=Data$age, y=Data$balance)
+data2 <- Data[c(1,6,12,13,14)]
+cor(data2)
+```
+
+#איכות הנתונים
+הגדרת משתנים קטגוריאלים
+```{r}
+Data$day=factor(Data$day)
+Data$job=factor(Data$job)
+Data$marital=factor(Data$marital)
+Data$education=factor(Data$education)
+Data$default=factor(Data$default)
+Data$housing=factor(Data$housing)
+Data$loan=factor(Data$loan)
+Data$contact=factor(Data$contact)
+Data$poutcome=factor(Data$poutcome)
+Data$Gender=factor(Data$Gender)
+Data$month=factor(Data$month)
+Data$y=factor(Data$y)
+
+```
+בדיקת נתונים שאינם הגיוניים
+```{r}
+# בדיקת טווחים למשתנים
+range(Data$age)
+range(Data$previous)
+range(Data$balance)
+range(Data$campaign)
+range(Data$pdays)
+```
+זיהוי ערכים חסרים
+```{r}
+sapply(Data,function(x) sum(is.na(x))/3406)
+missmap(Data, main = "Missing values vs observed")
+
+```
+##הכנת הנתונים
+נתונים חסרים - 
+איחוד בין unknown /Unknown
+לערכי NA על מנת לאפשר טיפול והתייחסות אליהם. 
+```{r}
+for ( i in 1:nrow(Data)) {
+  for (j in 1:ncol(Data)){
+    if (!is.na(Data[i,j])) {
+    if (Data[i,j] == "Unknown" || Data[i,j] == "unknown")
+      Data [i,j] <-  NA }
+  }
+}
+```
+השמטת תצפיות בעלות חוסר רב
+```{r}
+data = Data
+data <- data[rowSums(is.na(data)) < 3, ]
+```
+יצירת קטגוריה חדשה של unkwon עבור משתנה Poutcome
+```{r}
+Data$poutcome[is.na(Data$poutcome)] <- "unknown"
+```
+השמטת מאפיינים בעלי איכות נמוכה
+בחנו בעזרת מבחן חי בריבוע את הקורלציה בין gender
+לבין המשתנה המסובר. בשל תוצאות המבחן בחרנו להסיר את המשתנה
+```{r}
+df <- subset(Data, select = c(16,17)) #subset y and gender
+df <- na.omit(df) #NA remove
+chisq.test(x= df$Gender, y= df$y)
+Data$Gender <-  NULL
+```
+השלמת ערכים חסרים education,job
+על ידי שכיח
+```{r}
+#job
+x <- unlist(Data$job)
+tt <- table(x)
+Data$job[is.na(Data$job)] <- names(tt[tt==max(tt)])
+
+#education
+x <- unlist(Data$education)
+tt <- table(x)
+Data$education[is.na(Data$education)] <- names(tt[tt==max(tt)])
+
+```
+השלמת ערכים חסרים של משתנה contact באמצעות רגרסיה לוגיסטית.
+```{r}
+
+logistic_data <- Data
+logistic_data <- logistic_data[!is.na(logistic_data$contact),]
+full_model <- glm(contact ~ age+ job + marital + education +default + balance + housing + loan + day + month + campaign + pdays+ previous+poutcome, data = logistic_data, family = binomial("logit"))
+model= step(full_model)
+summary(model)
+anova(model, test="Chisq")
+levels(Data$contact)
+NA_rows_indexes <- which(is.na(Data$contact))
+
+
+pred =matrix(0,nrow =length(NA_rows_indexes),ncol =1)
+for (i in 1:length(NA_rows_indexes)){
+  pred[i,1] = predict(model,Data[i,c(1,3,4,5,11,12,15)] ,type="response")
+}
+
+j=1
+for (i in NA_rows_indexes){
+  Data[i,9]=pred[j,1]
+  j = j+1
+} 
+
+for (i in 1:length(NA_rows_indexes)){
+  if (pred[i,1]>0.5){
+    pred[i,1] = 'telephone'
+  }
+    else{pred[i,1] = 'cellular'}
+  }
+
+```
+##טיפול במאפיינים
+טרנספורמציה למשתנה previouse
+```{r}
+boxplot(Data$previous~Data$y,data=Data, main="y dependency in previous", 
+  	xlab="y", ylab="previous")
+boxplot(sqrt(Data$previous)~Data$y,data=Data, main="y dependency in sqrt(previous)", 
+  	xlab="y", ylab="previous")
+
+```
+דיסקרטיזציה לpdays
+```{r}
+sum(Data$pdays  == -1)
+sum(Data$pdays >= 0 & Data$pdays <= 100)
+sum(Data$pdays > 100 & Data$pdays <= 200)
+sum(Data$pdays > 200 & Data$pdays <= 300)
+sum(Data$pdays > 300 & Data$pdays <= 400)
+sum(Data$pdays > 400)
+
+data$pdays = cut(data$pdays,breaks = c(-Inf,0,100,200,300,400,Inf),labels = c("-1","0-100","100-200","200-300","300-400","400+"))
+```
