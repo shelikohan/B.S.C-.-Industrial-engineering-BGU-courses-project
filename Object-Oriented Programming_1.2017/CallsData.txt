@@ -1,0 +1,201 @@
+State	Area	Time	Arrival	Address
+2	3	0.5	8	Vitae Av
+1	1	1.0	12	5 Aliquam Ave
+3	3	0.5	4	3 Arcu St
+1	2	1.5	7	7 Pharetra St
+2	3	0.5	2	Leo Road
+3	3	0.5	3	54 Ornare Road
+3	3	2.0	1	Quam Street
+4	1	0.5	3	Vel Street
+1	3	0.5	12	5 Est Avenue
+1	3	1.0	14	65 Dignissim Ave
+3	3	1.5	8	12 Ultricies Street
+3	1	1.5	8	7 Aenean Avenue
+4	1	1.0	8	Non St
+2	3	0.5	6	3 Et Av
+1	1	1.0	14	6 Vulputate Avenue
+1	1	2.0	8	lit Street
+2	2	1.5	6	PO Sociosqu Rd
+1	3	1.0	3	5 Mauris Ave
+5	1	0.5	12	Felis Avenue
+1	2	1.0	2	Ultricies St
+3	3	2.5	1	3 Nec Rd
+2	1	0.5	12	2 Mauris Ave
+3	3	0.5	9	15 Pretium St
+2	3	0.5	11	arturient St
+3	1	0.5	7	Penatibus Street
+5	3	1.0	5	3 Aliquam Rd
+3	1	1.0	6	30 Dolor Street
+2	1	1.0	6	ollicitudin Ave
+4	2	0.5	10	8 Molestie Road
+1	3	0.5	6	11 Neque St
+4	2	1.0	1	12 Nonummy Av
+4	2	1.5	7	Molestie Av
+4	2	1.5	6	3 Quis Ave
+2	1	1.0	4	5 Semper Ave
+2	3	0.5	4	11 Nibh Rd
+2	1	1.0	2	Fusce Ave
+4	3	2.0	9	3 Dui Rd
+4	1	0.5	5	Pede Av
+2	2	0.5	1	Gravida Avenue
+1	2	0.5	7	9 Tellus Street
+2	1	0.5	5	22 Ante Road
+4	3	0.5	1	PO Est Av
+2	3	0.5	8	PO tricies Ave
+3	1	1.0	10	6 AP In St
+3	2	1.0	3	4 Gravida St
+2	2	2.0	2	10 Interdu Road
+5	3	0.5	12	8 Curabitur Street
+2	2	0.5	7	Erat Avenue
+1	2	1.0	8	7 Ullamcorper Ave
+1	1	1.5	13	4 Fermentum Rd.
+4	1	1.5	3	4 Nunc Avenue
+3	2	1.0	9	Eros Av
+3	3	0.5	11	Lorem Street
+4	2	1.0	14	6 Neque Rd
+3	3	2.0	9	7 Amet Rd
+3	1	1.5	3	3 Lacus Rd
+1	1	1.0	1	Malesuada Street
+4	3	0.5	3	Ap Ped Avenue
+2	3	1.0	4	Nunc Rd
+1	1	2.5	14	3 Eu St
+3	2	0.5	7	1 FreeIn Rd
+2	2	1.0	8	3 Phasellus St
+3	1	2.0	9	3 Lorem Ave
+3	1	1.0	6	8 Ut Rd
+1	3	0.5	5	17 Diam Av
+4	1	0.5	5	Est Street
+3	2	0.5	2	Aliquet Street
+1	1	1.0	14	Eu Road
+1	1	1.0	4	Sem Road
+1	2	2.0	6	29 Egestas Av
+4	1	0.5	12	4 Ligula Rd
+3	2	0.5	12	24 Urna Ave
+4	2	1.0	5	At Street
+2	1	1.5	8	Erlin Street
+4	3	1.5	10	34 Proin Street
+5	1	1.0	7	Lacus Rd
+3	3	1.5	14	20 Enim Rd
+1	1	1.0	8	Ap Eu St
+4	3	0.5	5	Sem Street
+1	1	0.5	2	Nulla Street
+2	2	0.5	2	2 Lacus Rd
+2	2	1.0	12	32 Dolor Rd
+3	3	1.0	8	Congue St
+1	1	2.0	12	Nibh Avenue
+4	3	0.5	3	4 Lobortis St
+3	3	0.5	4	Tortor Av
+3	1	1.0	8	Eu Rd
+4	2	1.5	14	Ap Et Rd
+3	1	1.5	11	Convallis Street
+1	2	1.0	1	7 Ultrices St
+3	2	0.5	7	2 Egestas Rd
+5	1	1.0	10	6 Elementum St
+1	1	2.0	14	37 Morbi St
+1	3	1.5	10	5 Feugiat St
+2	3	1.0	1	7 Nec St
+4	1	0.5	7	7 Eu Ave
+4	2	1.0	1	Vel St
+4	3	0.5	8	trices Av
+1	1	0.5	10	Mauris Rd
+2	3	0.5	6	Vitae Road
+4	2	1.0	8	Nona Street
+1	1	1.0	6	42 Luctus Rd
+4	1	2.0	20	Vitae St
+1	2	0.5	15	4 auris St
+2	2	0.5	11	7 Enim Rd
+2	3	1.0	8	Suspendisse St
+1	1	1.5	8	8 Tempor Avenue
+3	3	1.5	16	44 Conubia St
+4	3	1.0	16	18 Sed Rd
+5	2	2.0	20	9 Pellentesque Rd
+3	2	1.5	21	Proin Rd
+1	3	1.0	17	8 Arcu Avenue
+4	3	0.5	20	Etiam Avenue
+5	3	1.0	20	Nec St
+3	3	0.5	13	30 Nulla Road
+4	3	0.5	24	55 Sagittis Road
+1	2	0.5	19	Iaculis Street
+2	1	1.0	10	Dolor Avenue
+1	3	1.0	16	Aenean Rd
+3	2	1.0	26	Duis Rd
+2	1	2.0	7	19 Tincidunt Street
+2	1	0.5	12	4 Mauris Rd
+3	3	0.5	10	20 Egestas Ave
+3	2	1.0	15	5 Mauris Road
+1	2	1.5	26	Cras Street
+4	1	1.5	12	82 Lorem St
+2	3	1.0	25	4 Et Road
+2	3	2.0	13	Ullamcorper Road
+4	3	1.5	23	6 Elementum Rd
+1	1	1.0	28	9 Aenean Rd
+3	3	1.0	11	Justo Street
+5	3	0.5	5	Neque Ave
+2	3	1.0	25	3 Nisl St
+4	3	0.5	21	3 Elementum St
+4	1	0.5	21	Sed Ave
+3	1	0.5	28	4 Bibendum Road
+4	1	1.0	27	Aliquam St
+1	2	1.0	25	37 Dapibus Street
+2	3	1.0	25	Aliquam Rd
+3	2	2.0	18	Donec Av
+3	1	0.5	11	74 Sed Road
+1	3	0.5	26	Iaculis Rd
+1	3	1.0	26	31 Turpis St
+2	2	1.5	10	2 Velit Rd
+2	2	1.5	19	Aliquam Road
+5	1	1.0	17	Adipiscing Street
+2	1	2.0	15	8 Nec Ave
+3	3	1.5	12	Risus Road
+3	2	1.0	11	23 Eget Avenue
+4	2	2.0	22	Non St
+1	3	1.5	16	Cras St
+3	3	1.0	7	Turpis Avenue
+1	2	1.0	15	Facilisis Avenue
+4	2	0.5	24	8 Dui St
+3	3	1.0	26	7 Sed Road
+2	3	0.5	24	41 Et Av
+2	1	0.5	6	Massa St
+5	3	0.5	27	Vivamus Avenue
+3	2	1.0	5	Duis St
+2	1	1.5	19	Imperdiet Road
+4	2	1.0	18	Nonummy St
+5	3	2.0	11	Lectus Road
+1	2	1.5	20	Enim St
+5	3	1.0	14	Nec Av
+3	3	2.0	6	9 Arcu Street
+4	1	1.5	12	Sociosqu Avenue
+3	2	1.0	26	Risus Road
+3	1	1.0	19	2 Sollicitudin Av
+4	1	0.5	25	Mollis Rd
+1	2	1.0	7	Dui St
+3	2	0.5	23	2 Dui Street
+1	3	0.5	6	66 Ut Road
+3	1	0.5	15	Nec Road
+2	1	0.5	24	Phasellus Ave
+1	1	1.0	17	28 Augue Rd
+4	3	1.5	27	Vel Av
+1	3	1.0	20	40 Amet Street
+2	2	2.0	6	2 Nulla Road
+3	3	1.5	6	ApTellus Ave
+1	3	1.0	14	9 Nunc Rd
+2	1	2.0	5	1 Elit Avenue
+2	1	1.5	27	1 Natoque St
+2	1	1.0	24	N Street
+1	3	1.0	16	5 Ultrices Rd
+2	2	0.5	26	7 Metus St
+3	2	1.0	12	2 Nih Av
+4	1	0.5	8	Rutrum Street
+2	1	0.5	6	Porttitor Avenue
+3	3	0.5	22	iculus Ave
+4	3	0.5	11	Phasellus Rd
+3	2	1.0	25	7 Leo Rd
+2	2	1.5	14	4 Dictum Street
+4	2	1.0	27	4 Proin Avenue
+2	3	2.0	8	Turpis Rd
+3	3	2.0	15	Facilisis Rd
+2	3	1.5	10	Erat Avenue
+4	1	1.0	6	Nec Street
+2	1	1.0	10	6 Placerat Rd
+3	1	0.5	16	9 Egestas Rd
+1	3	1.0	13	Curabitur Road
