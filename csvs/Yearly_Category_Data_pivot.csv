@@ -1,0 +1,991 @@
+category,year,Gender,Gender_Profit,age_bin,Age_profit
+Fashion,2007,F,16375029738,,
+Shoes,2007,F,17269223829,,
+Makeup & Beauty,2007,F,1055186506,,
+Wallets & Bags,2007,F,12760225091,,
+Tops,2007,F,13144164243,,
+Bottoms,2007,F,14438077772,,
+Accessories,2007,F,23628425957,,
+Watches,2007,F,6879489627,,
+Phone upgrade,2007,F,18006263348,,
+Home decor,2007,F,12985708431,,
+Gadgets,2007,F,8460656055,,
+Baby & Kids,2007,F,15810006019,,
+Hobbies,2007,F,10633982149,,
+Jewerly,2007,F,23248958363,,
+Pets,2007,F,13726884537,,
+Fashion,2008,F,24059920171,,
+Shoes,2008,F,12533771388,,
+Makeup & Beauty,2008,F,21872830044,,
+Wallets & Bags,2008,F,16105526534,,
+Tops,2008,F,11052354148,,
+Bottoms,2008,F,13246058220,,
+Accessories,2008,F,26230421491,,
+Watches,2008,F,5366152741,,
+Phone upgrade,2008,F,14499281325,,
+Home decor,2008,F,23995660795,,
+Gadgets,2008,F,18363547692,,
+Baby & Kids,2008,F,16811529297,,
+Hobbies,2008,F,6993200999,,
+Jewerly,2008,F,12701307848,,
+Pets,2008,F,5697476259,,
+Fashion,2009,F,7177507954,,
+Shoes,2009,F,33519792380,,
+Makeup & Beauty,2009,F,19443167216,,
+Wallets & Bags,2009,F,17882147699,,
+Tops,2009,F,16760312298,,
+Bottoms,2009,F,19497191950,,
+Accessories,2009,F,21632829509,,
+Watches,2009,F,10156842490,,
+Phone upgrade,2009,F,33821357959,,
+Home decor,2009,F,9836754830,,
+Gadgets,2009,F,10399862582,,
+Baby & Kids,2009,F,8237055988,,
+Hobbies,2009,F,10803793889,,
+Jewerly,2009,F,22684665588,,
+Pets,2009,F,10320043724,,
+Fashion,2010,F,13608099127,,
+Shoes,2010,F,17507251484,,
+Makeup & Beauty,2010,F,22873265174,,
+Wallets & Bags,2010,F,11412287722,,
+Tops,2010,F,13757697605,,
+Bottoms,2010,F,12340351731,,
+Accessories,2010,F,23916459129,,
+Watches,2010,F,24624720671,,
+Phone upgrade,2010,F,18542322006,,
+Home decor,2010,F,17036582132,,
+Gadgets,2010,F,5957979075,,
+Baby & Kids,2010,F,10697467939,,
+Hobbies,2010,F,15137640248,,
+Jewerly,2010,F,11817691554,,
+Pets,2010,F,12021662129,,
+Fashion,2011,F,3845053003,,
+Shoes,2011,F,2709553294,,
+Makeup & Beauty,2011,F,13224277909,,
+Wallets & Bags,2011,F,25003054623,,
+Tops,2011,F,3744272470,,
+Bottoms,2011,F,3617615087,,
+Accessories,2011,F,2028099647,,
+Watches,2011,F,12533943605,,
+Phone upgrade,2011,F,16415444007,,
+Home decor,2011,F,11976099253,,
+Gadgets,2011,F,16778376644,,
+Baby & Kids,2011,F,371937585,,
+Hobbies,2011,F,16657439625,,
+Jewerly,2011,F,9503278181,,
+Pets,2011,F,26481143108,,
+Fashion,2012,F,28032270477,,
+Shoes,2012,F,17166902253,,
+Makeup & Beauty,2012,F,29584368664,,
+Wallets & Bags,2012,F,13379399302,,
+Tops,2012,F,19817606493,,
+Bottoms,2012,F,14796977159,,
+Accessories,2012,F,15801358289,,
+Watches,2012,F,9547162886,,
+Phone upgrade,2012,F,2244532634,,
+Home decor,2012,F,8654260622,,
+Gadgets,2012,F,9145757573,,
+Baby & Kids,2012,F,18971831855,,
+Hobbies,2012,F,24113724969,,
+Jewerly,2012,F,24440519445,,
+Pets,2012,F,20079072862,,
+Fashion,2013,F,10966263680,,
+Shoes,2013,F,15468129531,,
+Makeup & Beauty,2013,F,718547124,,
+Wallets & Bags,2013,F,15141839102,,
+Tops,2013,F,2687716910,,
+Bottoms,2013,F,12031277374,,
+Accessories,2013,F,7785503301,,
+Watches,2013,F,14584119950,,
+Phone upgrade,2013,F,13761199354,,
+Home decor,2013,F,19515023606,,
+Gadgets,2013,F,4952106469,,
+Baby & Kids,2013,F,17093135273,,
+Hobbies,2013,F,13769688996,,
+Jewerly,2013,F,9521644309,,
+Pets,2013,F,16940888552,,
+Fashion,2014,F,24050350821,,
+Shoes,2014,F,10775234858,,
+Makeup & Beauty,2014,F,20361886940,,
+Wallets & Bags,2014,F,6806071138,,
+Tops,2014,F,3533619531,,
+Bottoms,2014,F,31059724085,,
+Accessories,2014,F,9880145024,,
+Watches,2014,F,9695101179,,
+Phone upgrade,2014,F,7380034362,,
+Home decor,2014,F,18801225107,,
+Gadgets,2014,F,9959559913,,
+Baby & Kids,2014,F,171549791,,
+Hobbies,2014,F,10073114998,,
+Jewerly,2014,F,3643078515,,
+Pets,2014,F,15472109418,,
+Fashion,2015,F,4489807894,,
+Shoes,2015,F,16201575439,,
+Makeup & Beauty,2015,F,16454882937,,
+Wallets & Bags,2015,F,22785399265,,
+Tops,2015,F,13265870538,,
+Bottoms,2015,F,12437412794,,
+Accessories,2015,F,1303314552,,
+Watches,2015,F,21704401398,,
+Phone upgrade,2015,F,21874222752,,
+Home decor,2015,F,12660060495,,
+Gadgets,2015,F,4729010201,,
+Baby & Kids,2015,F,216539512,,
+Hobbies,2015,F,18831071293,,
+Jewerly,2015,F,20371772751,,
+Pets,2015,F,13023035984,,
+Fashion,2016,F,11826125019,,
+Shoes,2016,F,1696730194,,
+Makeup & Beauty,2016,F,3676671415,,
+Wallets & Bags,2016,F,30281057439,,
+Tops,2016,F,5067824489,,
+Bottoms,2016,F,17440774624,,
+Accessories,2016,F,18309110176,,
+Watches,2016,F,6850831570,,
+Phone upgrade,2016,F,19439072712,,
+Home decor,2016,F,20439527690,,
+Gadgets,2016,F,15698829441,,
+Baby & Kids,2016,F,4679171007,,
+Hobbies,2016,F,7331212218,,
+Jewerly,2016,F,24096817127,,
+Pets,2016,F,24188100544,,
+Fashion,2017,F,4876156626,,
+Shoes,2017,F,18583870141,,
+Makeup & Beauty,2017,F,9626557834,,
+Wallets & Bags,2017,F,9002333878,,
+Tops,2017,F,8401590299,,
+Bottoms,2017,F,9530216818,,
+Accessories,2017,F,8340695161,,
+Watches,2017,F,15083997452,,
+Phone upgrade,2017,F,9978871524,,
+Home decor,2017,F,22125561717,,
+Gadgets,2017,F,9099169350,,
+Baby & Kids,2017,F,8498736594,,
+Hobbies,2017,F,5711125323,,
+Jewerly,2017,F,23930419382,,
+Pets,2017,F,6945117401,,
+Fashion,2007,M,14379080478,,
+Shoes,2007,M,10396831516,,
+Makeup & Beauty,2007,M,18231100695,,
+Wallets & Bags,2007,M,13882706707,,
+Tops,2007,M,14689115565,,
+Bottoms,2007,M,14538618920,,
+Accessories,2007,M,3393551316,,
+Watches,2007,M,3971446949,,
+Phone upgrade,2007,M,2992291420,,
+Home decor,2007,M,15020756095,,
+Gadgets,2007,M,17168692650,,
+Baby & Kids,2007,M,15279856184,,
+Hobbies,2007,M,6295375447,,
+Jewerly,2007,M,6271796364,,
+Pets,2007,M,14393028901,,
+Fashion,2008,M,3042241427,,
+Shoes,2008,M,11636493695,,
+Makeup & Beauty,2008,M,1740561161,,
+Wallets & Bags,2008,M,14801594232,,
+Tops,2008,M,16159221302,,
+Bottoms,2008,M,19191313847,,
+Accessories,2008,M,5217865929,,
+Watches,2008,M,9755201431,,
+Phone upgrade,2008,M,17500540942,,
+Home decor,2008,M,10310044561,,
+Gadgets,2008,M,1114261186,,
+Baby & Kids,2008,M,10555936846,,
+Hobbies,2008,M,8984052580,,
+Jewerly,2008,M,7226783424,,
+Pets,2008,M,9552499429,,
+Fashion,2009,M,9127162042,,
+Shoes,2009,M,2868902699,,
+Makeup & Beauty,2009,M,1317247419,,
+Wallets & Bags,2009,M,19845909314,,
+Tops,2009,M,12169673637,,
+Bottoms,2009,M,6290500826,,
+Accessories,2009,M,13609994913,,
+Watches,2009,M,19234521015,,
+Phone upgrade,2009,M,2335635112,,
+Home decor,2009,M,15693492299,,
+Gadgets,2009,M,9281849887,,
+Baby & Kids,2009,M,11137810466,,
+Hobbies,2009,M,17340885487,,
+Jewerly,2009,M,4710944029,,
+Pets,2009,M,11670949208,,
+Fashion,2010,M,13867815020,,
+Shoes,2010,M,4346395773,,
+Makeup & Beauty,2010,M,5469287437,,
+Wallets & Bags,2010,M,13680301803,,
+Tops,2010,M,4532232214,,
+Bottoms,2010,M,4772348853,,
+Accessories,2010,M,5548471282,,
+Watches,2010,M,7727737105,,
+Phone upgrade,2010,M,9669448392,,
+Home decor,2010,M,14735432556,,
+Gadgets,2010,M,18398831154,,
+Baby & Kids,2010,M,17168823658,,
+Hobbies,2010,M,1750444960,,
+Jewerly,2010,M,6472608140,,
+Pets,2010,M,15098626925,,
+Fashion,2011,M,16251418841,,
+Shoes,2011,M,14915513844,,
+Makeup & Beauty,2011,M,12029833945,,
+Wallets & Bags,2011,M,2234204853,,
+Tops,2011,M,10083991145,,
+Bottoms,2011,M,15408927575,,
+Accessories,2011,M,18496488163,,
+Watches,2011,M,12514295954,,
+Phone upgrade,2011,M,10558091117,,
+Home decor,2011,M,18482549979,,
+Gadgets,2011,M,13253574130,,
+Baby & Kids,2011,M,19053201506,,
+Hobbies,2011,M,1341621416,,
+Jewerly,2011,M,16489781140,,
+Pets,2011,M,5056407915,,
+Fashion,2012,M,17451740084,,
+Shoes,2012,M,10115925816,,
+Makeup & Beauty,2012,M,4613215324,,
+Wallets & Bags,2012,M,10461325845,,
+Tops,2012,M,9826115667,,
+Bottoms,2012,M,5074898112,,
+Accessories,2012,M,18195257075,,
+Watches,2012,M,11230544947,,
+Phone upgrade,2012,M,16822224261,,
+Home decor,2012,M,13890734855,,
+Gadgets,2012,M,17470534180,,
+Baby & Kids,2012,M,2761706433,,
+Hobbies,2012,M,12107421282,,
+Jewerly,2012,M,1914178966,,
+Pets,2012,M,3872344031,,
+Fashion,2013,M,17621066694,,
+Shoes,2013,M,13650474390,,
+Makeup & Beauty,2013,M,12362752385,,
+Wallets & Bags,2013,M,16905673868,,
+Tops,2013,M,8078800429,,
+Bottoms,2013,M,14122746983,,
+Accessories,2013,M,14603139934,,
+Watches,2013,M,11571905231,,
+Phone upgrade,2013,M,6253158131,,
+Home decor,2013,M,2514200613,,
+Gadgets,2013,M,15677208527,,
+Baby & Kids,2013,M,18445366055,,
+Hobbies,2013,M,15014140386,,
+Jewerly,2013,M,8645526257,,
+Pets,2013,M,11882736246,,
+Fashion,2014,M,5794895301,,
+Shoes,2014,M,17094958149,,
+Makeup & Beauty,2014,M,11787597556,,
+Wallets & Bags,2014,M,3685338160,,
+Tops,2014,M,17357341273,,
+Bottoms,2014,M,4013219557,,
+Accessories,2014,M,12789455695,,
+Watches,2014,M,10865221137,,
+Phone upgrade,2014,M,14839332912,,
+Home decor,2014,M,13152450996,,
+Gadgets,2014,M,6293545430,,
+Baby & Kids,2014,M,15534114164,,
+Hobbies,2014,M,19830241285,,
+Jewerly,2014,M,17737689727,,
+Pets,2014,M,8507568275,,
+Fashion,2015,M,18429134967,,
+Shoes,2015,M,2178918859,,
+Makeup & Beauty,2015,M,18614655625,,
+Wallets & Bags,2015,M,5031629307,,
+Tops,2015,M,12867777423,,
+Bottoms,2015,M,11728082584,,
+Accessories,2015,M,19775541632,,
+Watches,2015,M,5978672532,,
+Phone upgrade,2015,M,2103334830,,
+Home decor,2015,M,13266738997,,
+Gadgets,2015,M,18781452046,,
+Baby & Kids,2015,M,13280119089,,
+Hobbies,2015,M,4966543343,,
+Jewerly,2015,M,14232743672,,
+Pets,2015,M,12218409658,,
+Fashion,2016,M,2829266376,,
+Shoes,2016,M,19973588753,,
+Makeup & Beauty,2016,M,19117352726,,
+Wallets & Bags,2016,M,5622251540,,
+Tops,2016,M,9871519874,,
+Bottoms,2016,M,8532178672,,
+Accessories,2016,M,9681402157,,
+Watches,2016,M,15906747758,,
+Phone upgrade,2016,M,1813356782,,
+Home decor,2016,M,7523073245,,
+Gadgets,2016,M,7864642792,,
+Baby & Kids,2016,M,17122162683,,
+Hobbies,2016,M,14381266276,,
+Jewerly,2016,M,7166403989,,
+Pets,2016,M,8407080813,,
+Fashion,2017,M,13791279056,,
+Shoes,2017,M,2060719371,,
+Makeup & Beauty,2017,M,10235322411,,
+Wallets & Bags,2017,M,16751102681,,
+Tops,2017,M,12341484022,,
+Bottoms,2017,M,12510094499,,
+Accessories,2017,M,9978564527,,
+Watches,2017,M,18092245183,,
+Phone upgrade,2017,M,10509847079,,
+Home decor,2017,M,5215463453,,
+Gadgets,2017,M,18785669005,,
+Baby & Kids,2017,M,9156160159,,
+Hobbies,2017,M,12204012407,,
+Jewerly,2017,M,12251737568,,
+Pets,2017,M,10744207955,,
+Fashion,2007,,,age_group_18-25,9966239482
+Shoes,2007,,,age_group_18-25,9917644352
+Makeup & Beauty,2007,,,age_group_18-25,9845434126
+Wallets & Bags,2007,,,age_group_18-25,9057531600
+Tops,2007,,,age_group_18-25,4103012090
+Bottoms,2007,,,age_group_18-25,8823693646
+Accessories,2007,,,age_group_18-25,4703411083
+Watches,2007,,,age_group_18-25,1841622967
+Phone upgrade,2007,,,age_group_18-25,11275860579
+Home decor,2007,,,age_group_18-25,10565060292
+Gadgets,2007,,,age_group_18-25,5478327101
+Baby & Kids,2007,,,age_group_18-25,8830613149
+Hobbies,2007,,,age_group_18-25,4102629358
+Jewerly,2007,,,age_group_18-25,9005102447
+Pets,2007,,,age_group_18-25,8529218269
+Fashion,2008,,,age_group_18-25,5380597184
+Shoes,2008,,,age_group_18-25,4617216481
+Makeup & Beauty,2008,,,age_group_18-25,5320443858
+Wallets & Bags,2008,,,age_group_18-25,8508495146
+Tops,2008,,,age_group_18-25,10014189333
+Bottoms,2008,,,age_group_18-25,11453970308
+Accessories,2008,,,age_group_18-25,4539088411
+Watches,2008,,,age_group_18-25,3007449867
+Phone upgrade,2008,,,age_group_18-25,7846958202
+Home decor,2008,,,age_group_18-25,6802907349
+Gadgets,2008,,,age_group_18-25,652757469
+Baby & Kids,2008,,,age_group_18-25,909371541
+Hobbies,2008,,,age_group_18-25,861736809
+Jewerly,2008,,,age_group_18-25,5472055129
+Pets,2008,,,age_group_18-25,1597530671
+Fashion,2009,,,age_group_18-25,2022794687
+Shoes,2009,,,age_group_18-25,8498716270
+Makeup & Beauty,2009,,,age_group_18-25,5261770943
+Wallets & Bags,2009,,,age_group_18-25,10973996796
+Tops,2009,,,age_group_18-25,8426709866
+Bottoms,2009,,,age_group_18-25,3043181572
+Accessories,2009,,,age_group_18-25,8993902911
+Watches,2009,,,age_group_18-25,950245315
+Phone upgrade,2009,,,age_group_18-25,9046797798
+Home decor,2009,,,age_group_18-25,3776541781
+Gadgets,2009,,,age_group_18-25,4442715890
+Baby & Kids,2009,,,age_group_18-25,4701827648
+Hobbies,2009,,,age_group_18-25,10310320927
+Jewerly,2009,,,age_group_18-25,10240612714
+Pets,2009,,,age_group_18-25,7137350996
+Fashion,2010,,,age_group_18-25,6418493010
+Shoes,2010,,,age_group_18-25,7780295935
+Makeup & Beauty,2010,,,age_group_18-25,8282579395
+Wallets & Bags,2010,,,age_group_18-25,7160146851
+Tops,2010,,,age_group_18-25,9932719942
+Bottoms,2010,,,age_group_18-25,2874457856
+Accessories,2010,,,age_group_18-25,10878842053
+Watches,2010,,,age_group_18-25,7699807108
+Phone upgrade,2010,,,age_group_18-25,10462028047
+Home decor,2010,,,age_group_18-25,9032003436
+Gadgets,2010,,,age_group_18-25,9532024813
+Baby & Kids,2010,,,age_group_18-25,11083871486
+Hobbies,2010,,,age_group_18-25,962905833
+Jewerly,2010,,,age_group_18-25,6562489403
+Pets,2010,,,age_group_18-25,1738279857
+Fashion,2011,,,age_group_18-25,3885545352
+Shoes,2011,,,age_group_18-25,6516041255
+Makeup & Beauty,2011,,,age_group_18-25,4037109798
+Wallets & Bags,2011,,,age_group_18-25,9910843947
+Tops,2011,,,age_group_18-25,2866159051
+Bottoms,2011,,,age_group_18-25,3915854843
+Accessories,2011,,,age_group_18-25,3083353312
+Watches,2011,,,age_group_18-25,3261045072
+Phone upgrade,2011,,,age_group_18-25,3152857956
+Home decor,2011,,,age_group_18-25,11326055534
+Gadgets,2011,,,age_group_18-25,1032983527
+Baby & Kids,2011,,,age_group_18-25,7747708201
+Hobbies,2011,,,age_group_18-25,8119300055
+Jewerly,2011,,,age_group_18-25,2943800626
+Pets,2011,,,age_group_18-25,7212896148
+Fashion,2012,,,age_group_18-25,11872645515
+Shoes,2012,,,age_group_18-25,2168251090
+Makeup & Beauty,2012,,,age_group_18-25,6783932580
+Wallets & Bags,2012,,,age_group_18-25,8789528770
+Tops,2012,,,age_group_18-25,4902242226
+Bottoms,2012,,,age_group_18-25,691063656
+Accessories,2012,,,age_group_18-25,11622670967
+Watches,2012,,,age_group_18-25,10483465747
+Phone upgrade,2012,,,age_group_18-25,5418429147
+Home decor,2012,,,age_group_18-25,607486425
+Gadgets,2012,,,age_group_18-25,10158880003
+Baby & Kids,2012,,,age_group_18-25,9209773568
+Hobbies,2012,,,age_group_18-25,6083808022
+Jewerly,2012,,,age_group_18-25,2412618940
+Pets,2012,,,age_group_18-25,9051662495
+Fashion,2013,,,age_group_18-25,8890192483
+Shoes,2013,,,age_group_18-25,10576864183
+Makeup & Beauty,2013,,,age_group_18-25,2821239426
+Wallets & Bags,2013,,,age_group_18-25,1066796510
+Tops,2013,,,age_group_18-25,572269713
+Bottoms,2013,,,age_group_18-25,903901236
+Accessories,2013,,,age_group_18-25,5048771714
+Watches,2013,,,age_group_18-25,9199678933
+Phone upgrade,2013,,,age_group_18-25,3544323260
+Home decor,2013,,,age_group_18-25,8174837791
+Gadgets,2013,,,age_group_18-25,9866310660
+Baby & Kids,2013,,,age_group_18-25,7847569278
+Hobbies,2013,,,age_group_18-25,7474811837
+Jewerly,2013,,,age_group_18-25,5984653190
+Pets,2013,,,age_group_18-25,11004821911
+Fashion,2014,,,age_group_18-25,7364263480
+Shoes,2014,,,age_group_18-25,4291974459
+Makeup & Beauty,2014,,,age_group_18-25,10232043585
+Wallets & Bags,2014,,,age_group_18-25,1002916216
+Tops,2014,,,age_group_18-25,6828752260
+Bottoms,2014,,,age_group_18-25,1187949550
+Accessories,2014,,,age_group_18-25,5772640251
+Watches,2014,,,age_group_18-25,1305151901
+Phone upgrade,2014,,,age_group_18-25,945802850
+Home decor,2014,,,age_group_18-25,10643332776
+Gadgets,2014,,,age_group_18-25,8034909397
+Baby & Kids,2014,,,age_group_18-25,3319378299
+Hobbies,2014,,,age_group_18-25,2091436409
+Jewerly,2014,,,age_group_18-25,5156968741
+Pets,2014,,,age_group_18-25,3376687810
+Fashion,2015,,,age_group_18-25,3820839212
+Shoes,2015,,,age_group_18-25,1616525895
+Makeup & Beauty,2015,,,age_group_18-25,10276126562
+Wallets & Bags,2015,,,age_group_18-25,8865759064
+Tops,2015,,,age_group_18-25,11745285809
+Bottoms,2015,,,age_group_18-25,4849617716
+Accessories,2015,,,age_group_18-25,7080812863
+Watches,2015,,,age_group_18-25,10943438079
+Phone upgrade,2015,,,age_group_18-25,5008380977
+Home decor,2015,,,age_group_18-25,1722383829
+Gadgets,2015,,,age_group_18-25,1966118015
+Baby & Kids,2015,,,age_group_18-25,775022678
+Hobbies,2015,,,age_group_18-25,9880455135
+Jewerly,2015,,,age_group_18-25,6608690863
+Pets,2015,,,age_group_18-25,10839149753
+Fashion,2016,,,age_group_18-25,2054385081
+Shoes,2016,,,age_group_18-25,4617782879
+Makeup & Beauty,2016,,,age_group_18-25,5474377216
+Wallets & Bags,2016,,,age_group_18-25,2622555309
+Tops,2016,,,age_group_18-25,10231144734
+Bottoms,2016,,,age_group_18-25,11763361242
+Accessories,2016,,,age_group_18-25,1427802062
+Watches,2016,,,age_group_18-25,11322351015
+Phone upgrade,2016,,,age_group_18-25,3885680908
+Home decor,2016,,,age_group_18-25,7186918710
+Gadgets,2016,,,age_group_18-25,595369814
+Baby & Kids,2016,,,age_group_18-25,6162815316
+Hobbies,2016,,,age_group_18-25,10174900366
+Jewerly,2016,,,age_group_18-25,8219907304
+Pets,2016,,,age_group_18-25,9430810353
+Fashion,2017,,,age_group_18-25,3909504225
+Shoes,2017,,,age_group_18-25,9891908857
+Makeup & Beauty,2017,,,age_group_18-25,9688736324
+Wallets & Bags,2017,,,age_group_18-25,10737741979
+Tops,2017,,,age_group_18-25,8828578508
+Bottoms,2017,,,age_group_18-25,2823454533
+Accessories,2017,,,age_group_18-25,3954389653
+Watches,2017,,,age_group_18-25,5098405869
+Phone upgrade,2017,,,age_group_18-25,7257303836
+Home decor,2017,,,age_group_18-25,3224541026
+Gadgets,2017,,,age_group_18-25,8380593274
+Baby & Kids,2017,,,age_group_18-25,9064796342
+Hobbies,2017,,,age_group_18-25,2967764513
+Jewerly,2017,,,age_group_18-25,8164489248
+Pets,2017,,,age_group_18-25,7154843621
+Fashion,2007,,,age_group_26-40,2283215191
+Shoes,2007,,,age_group_26-40,2873229907
+Makeup & Beauty,2007,,,age_group_26-40,2001943127
+Wallets & Bags,2007,,,age_group_26-40,8070864882
+Tops,2007,,,age_group_26-40,1589749919
+Bottoms,2007,,,age_group_26-40,4140803902
+Accessories,2007,,,age_group_26-40,10330491818
+Watches,2007,,,age_group_26-40,3366055001
+Phone upgrade,2007,,,age_group_26-40,7228516849
+Home decor,2007,,,age_group_26-40,1949991715
+Gadgets,2007,,,age_group_26-40,5450481371
+Baby & Kids,2007,,,age_group_26-40,10869260852
+Hobbies,2007,,,age_group_26-40,8697081831
+Jewerly,2007,,,age_group_26-40,1663123939
+Pets,2007,,,age_group_26-40,9019432265
+Fashion,2008,,,age_group_26-40,8680353186
+Shoes,2008,,,age_group_26-40,3614110248
+Makeup & Beauty,2008,,,age_group_26-40,3340166782
+Wallets & Bags,2008,,,age_group_26-40,6703963914
+Tops,2008,,,age_group_26-40,3249603397
+Bottoms,2008,,,age_group_26-40,7107807208
+Accessories,2008,,,age_group_26-40,11455433878
+Watches,2008,,,age_group_26-40,6931672678
+Phone upgrade,2008,,,age_group_26-40,11050526059
+Home decor,2008,,,age_group_26-40,7705359881
+Gadgets,2008,,,age_group_26-40,5240643978
+Baby & Kids,2008,,,age_group_26-40,9799070477
+Hobbies,2008,,,age_group_26-40,2016959193
+Jewerly,2008,,,age_group_26-40,8665705396
+Pets,2008,,,age_group_26-40,3724370967
+Fashion,2009,,,age_group_26-40,2677384730
+Shoes,2009,,,age_group_26-40,6826786776
+Makeup & Beauty,2009,,,age_group_26-40,4620475251
+Wallets & Bags,2009,,,age_group_26-40,8264903270
+Tops,2009,,,age_group_26-40,7463620262
+Bottoms,2009,,,age_group_26-40,3264940199
+Accessories,2009,,,age_group_26-40,6183589327
+Watches,2009,,,age_group_26-40,4156456361
+Phone upgrade,2009,,,age_group_26-40,11846628124
+Home decor,2009,,,age_group_26-40,9949122284
+Gadgets,2009,,,age_group_26-40,4486330708
+Baby & Kids,2009,,,age_group_26-40,5284515419
+Hobbies,2009,,,age_group_26-40,6409613192
+Jewerly,2009,,,age_group_26-40,4784797411
+Pets,2009,,,age_group_26-40,5025343450
+Fashion,2010,,,age_group_26-40,8607584525
+Shoes,2010,,,age_group_26-40,4793275627
+Makeup & Beauty,2010,,,age_group_26-40,6893720560
+Wallets & Bags,2010,,,age_group_26-40,6026031268
+Tops,2010,,,age_group_26-40,3570157640
+Bottoms,2010,,,age_group_26-40,3709467233
+Accessories,2010,,,age_group_26-40,4389732726
+Watches,2010,,,age_group_26-40,8457472165
+Phone upgrade,2010,,,age_group_26-40,7964160925
+Home decor,2010,,,age_group_26-40,5488405399
+Gadgets,2010,,,age_group_26-40,11654182393
+Baby & Kids,2010,,,age_group_26-40,9533987416
+Hobbies,2010,,,age_group_26-40,4811299353
+Jewerly,2010,,,age_group_26-40,3115080852
+Pets,2010,,,age_group_26-40,2775538333
+Fashion,2011,,,age_group_26-40,5686207457
+Shoes,2011,,,age_group_26-40,3482319406
+Makeup & Beauty,2011,,,age_group_26-40,10250796326
+Wallets & Bags,2011,,,age_group_26-40,6631755768
+Tops,2011,,,age_group_26-40,1962841713
+Bottoms,2011,,,age_group_26-40,4807158407
+Accessories,2011,,,age_group_26-40,2916949398
+Watches,2011,,,age_group_26-40,7661804290
+Phone upgrade,2011,,,age_group_26-40,7884644285
+Home decor,2011,,,age_group_26-40,11795657555
+Gadgets,2011,,,age_group_26-40,9549500816
+Baby & Kids,2011,,,age_group_26-40,6386588479
+Hobbies,2011,,,age_group_26-40,7536680458
+Jewerly,2011,,,age_group_26-40,629970053
+Pets,2011,,,age_group_26-40,8166234737
+Fashion,2012,,,age_group_26-40,11872276786
+Shoes,2012,,,age_group_26-40,7384253957
+Makeup & Beauty,2012,,,age_group_26-40,10229107678
+Wallets & Bags,2012,,,age_group_26-40,2010949689
+Tops,2012,,,age_group_26-40,8460159365
+Bottoms,2012,,,age_group_26-40,10584498743
+Accessories,2012,,,age_group_26-40,2598137556
+Watches,2012,,,age_group_26-40,1921853230
+Phone upgrade,2012,,,age_group_26-40,8734344434
+Home decor,2012,,,age_group_26-40,2531000562
+Gadgets,2012,,,age_group_26-40,3799265619
+Baby & Kids,2012,,,age_group_26-40,2573290040
+Hobbies,2012,,,age_group_26-40,11624876270
+Jewerly,2012,,,age_group_26-40,5261876696
+Pets,2012,,,age_group_26-40,9465006945
+Fashion,2013,,,age_group_26-40,10769640314
+Shoes,2013,,,age_group_26-40,5563565031
+Makeup & Beauty,2013,,,age_group_26-40,5343625708
+Wallets & Bags,2013,,,age_group_26-40,10026576021
+Tops,2013,,,age_group_26-40,4025087698
+Bottoms,2013,,,age_group_26-40,1766336373
+Accessories,2013,,,age_group_26-40,5031957998
+Watches,2013,,,age_group_26-40,4721792657
+Phone upgrade,2013,,,age_group_26-40,4885788990
+Home decor,2013,,,age_group_26-40,2998516455
+Gadgets,2013,,,age_group_26-40,6090166021
+Baby & Kids,2013,,,age_group_26-40,9565982474
+Hobbies,2013,,,age_group_26-40,7899811666
+Jewerly,2013,,,age_group_26-40,3193253332
+Pets,2013,,,age_group_26-40,5222394381
+Fashion,2014,,,age_group_26-40,8421106574
+Shoes,2014,,,age_group_26-40,11359412436
+Makeup & Beauty,2014,,,age_group_26-40,7181207660
+Wallets & Bags,2014,,,age_group_26-40,4246963157
+Tops,2014,,,age_group_26-40,1244835043
+Bottoms,2014,,,age_group_26-40,11865990435
+Accessories,2014,,,age_group_26-40,4510579909
+Watches,2014,,,age_group_26-40,951166241
+Phone upgrade,2014,,,age_group_26-40,6646439656
+Home decor,2014,,,age_group_26-40,1359038651
+Gadgets,2014,,,age_group_26-40,991731167
+Baby & Kids,2014,,,age_group_26-40,730635809
+Hobbies,2014,,,age_group_26-40,7318610113
+Jewerly,2014,,,age_group_26-40,6597928972
+Pets,2014,,,age_group_26-40,9030189612
+Fashion,2015,,,age_group_26-40,7644822191
+Shoes,2015,,,age_group_26-40,4755629571
+Makeup & Beauty,2015,,,age_group_26-40,2975187230
+Wallets & Bags,2015,,,age_group_26-40,7914572458
+Tops,2015,,,age_group_26-40,2340570230
+Bottoms,2015,,,age_group_26-40,4453409859
+Accessories,2015,,,age_group_26-40,6607335131
+Watches,2015,,,age_group_26-40,10221855427
+Phone upgrade,2015,,,age_group_26-40,6079322874
+Home decor,2015,,,age_group_26-40,5777587808
+Gadgets,2015,,,age_group_26-40,5838406004
+Baby & Kids,2015,,,age_group_26-40,6166941898
+Hobbies,2015,,,age_group_26-40,1700500713
+Jewerly,2015,,,age_group_26-40,7520749635
+Pets,2015,,,age_group_26-40,2975338744
+Fashion,2016,,,age_group_26-40,1234762108
+Shoes,2016,,,age_group_26-40,5222394373
+Makeup & Beauty,2016,,,age_group_26-40,3590881837
+Wallets & Bags,2016,,,age_group_26-40,11223519277
+Tops,2016,,,age_group_26-40,915062151
+Bottoms,2016,,,age_group_26-40,845541556
+Accessories,2016,,,age_group_26-40,10540777345
+Watches,2016,,,age_group_26-40,1838313110
+Phone upgrade,2016,,,age_group_26-40,10304171130
+Home decor,2016,,,age_group_26-40,2471157516
+Gadgets,2016,,,age_group_26-40,11764115183
+Baby & Kids,2016,,,age_group_26-40,7716953002
+Hobbies,2016,,,age_group_26-40,1312502583
+Jewerly,2016,,,age_group_26-40,8557664627
+Pets,2016,,,age_group_26-40,10599289018
+Fashion,2017,,,age_group_26-40,4618812160
+Shoes,2017,,,age_group_26-40,3769364417
+Makeup & Beauty,2017,,,age_group_26-40,2463386515
+Wallets & Bags,2017,,,age_group_26-40,10936875663
+Tops,2017,,,age_group_26-40,8951408797
+Bottoms,2017,,,age_group_26-40,2832741902
+Accessories,2017,,,age_group_26-40,2498859587
+Watches,2017,,,age_group_26-40,1768544172
+Phone upgrade,2017,,,age_group_26-40,2758887424
+Home decor,2017,,,age_group_26-40,10641855801
+Gadgets,2017,,,age_group_26-40,630064389
+Baby & Kids,2017,,,age_group_26-40,5164479540
+Hobbies,2017,,,age_group_26-40,2367341091
+Jewerly,2017,,,age_group_26-40,9280017815
+Pets,2017,,,age_group_26-40,2467738636
+Fashion,2007,,,age_group_41-65,7378717663
+Shoes,2007,,,age_group_41-65,7093055328
+Makeup & Beauty,2007,,,age_group_41-65,4660789193
+Wallets & Bags,2007,,,age_group_41-65,5242519065
+Tops,2007,,,age_group_41-65,8305315275
+Bottoms,2007,,,age_group_41-65,11796511650
+Accessories,2007,,,age_group_41-65,10701313479
+Watches,2007,,,age_group_41-65,759086750
+Phone upgrade,2007,,,age_group_41-65,1339558947
+Home decor,2007,,,age_group_41-65,3549919824
+Gadgets,2007,,,age_group_41-65,4210257184
+Baby & Kids,2007,,,age_group_41-65,1737687807
+Hobbies,2007,,,age_group_41-65,3101826392
+Jewerly,2007,,,age_group_41-65,10030302204
+Pets,2007,,,age_group_41-65,4611727802
+Fashion,2008,,,age_group_41-65,2160196466
+Shoes,2008,,,age_group_41-65,4823846887
+Makeup & Beauty,2008,,,age_group_41-65,9487685629
+Wallets & Bags,2008,,,age_group_41-65,6358033762
+Tops,2008,,,age_group_41-65,2021039480
+Bottoms,2008,,,age_group_41-65,1911417279
+Accessories,2008,,,age_group_41-65,11227679348
+Watches,2008,,,age_group_41-65,2555865653
+Phone upgrade,2008,,,age_group_41-65,9955731375
+Home decor,2008,,,age_group_41-65,8472226068
+Gadgets,2008,,,age_group_41-65,6306523352
+Baby & Kids,2008,,,age_group_41-65,4975555849
+Hobbies,2008,,,age_group_41-65,1757663964
+Jewerly,2008,,,age_group_41-65,3280635230
+Pets,2008,,,age_group_41-65,3429607588
+Fashion,2009,,,age_group_41-65,5841323125
+Shoes,2009,,,age_group_41-65,9712149871
+Makeup & Beauty,2009,,,age_group_41-65,9506719989
+Wallets & Bags,2009,,,age_group_41-65,9709175567
+Tops,2009,,,age_group_41-65,4103604291
+Bottoms,2009,,,age_group_41-65,8135221359
+Accessories,2009,,,age_group_41-65,9858780311
+Watches,2009,,,age_group_41-65,1132751219
+Phone upgrade,2009,,,age_group_41-65,5004445188
+Home decor,2009,,,age_group_41-65,4545492697
+Gadgets,2009,,,age_group_41-65,6945408934
+Baby & Kids,2009,,,age_group_41-65,3619308707
+Hobbies,2009,,,age_group_41-65,909019759
+Jewerly,2009,,,age_group_41-65,8084997861
+Pets,2009,,,age_group_41-65,6660275928
+Fashion,2010,,,age_group_41-65,11294491475
+Shoes,2010,,,age_group_41-65,982965068
+Makeup & Beauty,2010,,,age_group_41-65,1240515017
+Wallets & Bags,2010,,,age_group_41-65,8442287315
+Tops,2010,,,age_group_41-65,3291399751
+Bottoms,2010,,,age_group_41-65,6324323377
+Accessories,2010,,,age_group_41-65,9607589834
+Watches,2010,,,age_group_41-65,6143000620
+Phone upgrade,2010,,,age_group_41-65,2543950835
+Home decor,2010,,,age_group_41-65,11094830346
+Gadgets,2010,,,age_group_41-65,1185945502
+Baby & Kids,2010,,,age_group_41-65,2646155697
+Hobbies,2010,,,age_group_41-65,701369967
+Jewerly,2010,,,age_group_41-65,2742652860
+Pets,2010,,,age_group_41-65,11384780700
+Fashion,2011,,,age_group_41-65,1832016445
+Shoes,2011,,,age_group_41-65,3398469188
+Makeup & Beauty,2011,,,age_group_41-65,2913897755
+Wallets & Bags,2011,,,age_group_41-65,3698364755
+Tops,2011,,,age_group_41-65,5157591755
+Bottoms,2011,,,age_group_41-65,602567267
+Accessories,2011,,,age_group_41-65,10160032300
+Watches,2011,,,age_group_41-65,8230281807
+Phone upgrade,2011,,,age_group_41-65,7449385911
+Home decor,2011,,,age_group_41-65,3779714517
+Gadgets,2011,,,age_group_41-65,11559042295
+Baby & Kids,2011,,,age_group_41-65,2783609896
+Hobbies,2011,,,age_group_41-65,799113304
+Jewerly,2011,,,age_group_41-65,4693301964
+Pets,2011,,,age_group_41-65,10960994636
+Fashion,2012,,,age_group_41-65,10587871749
+Shoes,2012,,,age_group_41-65,7710696916
+Makeup & Beauty,2012,,,age_group_41-65,8590725481
+Wallets & Bags,2012,,,age_group_41-65,2445260171
+Tops,2012,,,age_group_41-65,8646256855
+Bottoms,2012,,,age_group_41-65,6797833142
+Accessories,2012,,,age_group_41-65,2686942673
+Watches,2012,,,age_group_41-65,5689640722
+Phone upgrade,2012,,,age_group_41-65,4241953361
+Home decor,2012,,,age_group_41-65,9164203761
+Gadgets,2012,,,age_group_41-65,9959244193
+Baby & Kids,2012,,,age_group_41-65,5017792111
+Hobbies,2012,,,age_group_41-65,6964918465
+Jewerly,2012,,,age_group_41-65,7778931614
+Pets,2012,,,age_group_41-65,1188410489
+Fashion,2013,,,age_group_41-65,5554380776
+Shoes,2013,,,age_group_41-65,8118720403
+Makeup & Beauty,2013,,,age_group_41-65,1569515707
+Wallets & Bags,2013,,,age_group_41-65,1861637325
+Tops,2013,,,age_group_41-65,526004538
+Bottoms,2013,,,age_group_41-65,2815654810
+Accessories,2013,,,age_group_41-65,5971757954
+Watches,2013,,,age_group_41-65,5253042918
+Phone upgrade,2013,,,age_group_41-65,7097096082
+Home decor,2013,,,age_group_41-65,8440405026
+Gadgets,2013,,,age_group_41-65,2177179924
+Baby & Kids,2013,,,age_group_41-65,10386195260
+Hobbies,2013,,,age_group_41-65,8357647956
+Jewerly,2013,,,age_group_41-65,5608785408
+Pets,2013,,,age_group_41-65,1393069610
+Fashion,2014,,,age_group_41-65,10555544165
+Shoes,2014,,,age_group_41-65,5175825742
+Makeup & Beauty,2014,,,age_group_41-65,3020423398
+Wallets & Bags,2014,,,age_group_41-65,3655253533
+Tops,2014,,,age_group_41-65,3099273863
+Bottoms,2014,,,age_group_41-65,11802097899
+Accessories,2014,,,age_group_41-65,1719120149
+Watches,2014,,,age_group_41-65,5476760576
+Phone upgrade,2014,,,age_group_41-65,9422019998
+Home decor,2014,,,age_group_41-65,8265621178
+Gadgets,2014,,,age_group_41-65,3136773693
+Baby & Kids,2014,,,age_group_41-65,5331921896
+Hobbies,2014,,,age_group_41-65,9304551493
+Jewerly,2014,,,age_group_41-65,3192571128
+Pets,2014,,,age_group_41-65,7198370874
+Fashion,2015,,,age_group_41-65,7743783751
+Shoes,2015,,,age_group_41-65,6861590901
+Makeup & Beauty,2015,,,age_group_41-65,4440408903
+Wallets & Bags,2015,,,age_group_41-65,1522373151
+Tops,2015,,,age_group_41-65,3501126252
+Bottoms,2015,,,age_group_41-65,5484066826
+Accessories,2015,,,age_group_41-65,6193082268
+Watches,2015,,,age_group_41-65,4880853589
+Phone upgrade,2015,,,age_group_41-65,4273660263
+Home decor,2015,,,age_group_41-65,11410557088
+Gadgets,2015,,,age_group_41-65,9745721918
+Baby & Kids,2015,,,age_group_41-65,641935388
+Hobbies,2015,,,age_group_41-65,6225828583
+Jewerly,2015,,,age_group_41-65,9444271390
+Pets,2015,,,age_group_41-65,1644346127
+Fashion,2016,,,age_group_41-65,7420102386
+Shoes,2016,,,age_group_41-65,10859298392
+Makeup & Beauty,2016,,,age_group_41-65,3461589213
+Wallets & Bags,2016,,,age_group_41-65,11799436755
+Tops,2016,,,age_group_41-65,3073066413
+Bottoms,2016,,,age_group_41-65,11155704765
+Accessories,2016,,,age_group_41-65,5568753957
+Watches,2016,,,age_group_41-65,1855927470
+Phone upgrade,2016,,,age_group_41-65,2677479990
+Home decor,2016,,,age_group_41-65,10373647337
+Gadgets,2016,,,age_group_41-65,8456932382
+Baby & Kids,2016,,,age_group_41-65,6902883893
+Hobbies,2016,,,age_group_41-65,4197012695
+Jewerly,2016,,,age_group_41-65,7305745330
+Pets,2016,,,age_group_41-65,7311070252
+Fashion,2017,,,age_group_41-65,4600239273
+Shoes,2017,,,age_group_41-65,2777520346
+Makeup & Beauty,2017,,,age_group_41-65,6516318452
+Wallets & Bags,2017,,,age_group_41-65,2055458632
+Tops,2017,,,age_group_41-65,1485240468
+Bottoms,2017,,,age_group_41-65,7475978151
+Accessories,2017,,,age_group_41-65,6948450392
+Watches,2017,,,age_group_41-65,4965846171
+Phone upgrade,2017,,,age_group_41-65,4823578370
+Home decor,2017,,,age_group_41-65,3913340864
+Gadgets,2017,,,age_group_41-65,1164391510
+Baby & Kids,2017,,,age_group_41-65,2651012955
+Hobbies,2017,,,age_group_41-65,1481801414
+Jewerly,2017,,,age_group_41-65,7436161458
+Pets,2017,,,age_group_41-65,5743580588
+Fashion,2007,,,age_group_66+,11125937880
+Shoes,2007,,,age_group_66+,7782125758
+Makeup & Beauty,2007,,,age_group_66+,2778120755
+Wallets & Bags,2007,,,age_group_66+,4272016251
+Tops,2007,,,age_group_66+,614998515
+Bottoms,2007,,,age_group_66+,4215687494
+Accessories,2007,,,age_group_66+,1286760893
+Watches,2007,,,age_group_66+,4884171858
+Phone upgrade,2007,,,age_group_66+,1154618393
+Home decor,2007,,,age_group_66+,11941492695
+Gadgets,2007,,,age_group_66+,10490283049
+Baby & Kids,2007,,,age_group_66+,9652300395
+Hobbies,2007,,,age_group_66+,1027820015
+Jewerly,2007,,,age_group_66+,8822226137
+Pets,2007,,,age_group_66+,5959535102
+Fashion,2008,,,age_group_66+,10881014762
+Shoes,2008,,,age_group_66+,11115091467
+Makeup & Beauty,2008,,,age_group_66+,5465094936
+Wallets & Bags,2008,,,age_group_66+,9336627944
+Tops,2008,,,age_group_66+,11926743240
+Bottoms,2008,,,age_group_66+,11964177272
+Accessories,2008,,,age_group_66+,4226085783
+Watches,2008,,,age_group_66+,2626365974
+Phone upgrade,2008,,,age_group_66+,3146606631
+Home decor,2008,,,age_group_66+,11325212058
+Gadgets,2008,,,age_group_66+,7277884079
+Baby & Kids,2008,,,age_group_66+,11683468276
+Hobbies,2008,,,age_group_66+,3255246313
+Jewerly,2008,,,age_group_66+,2509695517
+Pets,2008,,,age_group_66+,6498466462
+Fashion,2009,,,age_group_66+,5763167454
+Shoes,2009,,,age_group_66+,11351042162
+Makeup & Beauty,2009,,,age_group_66+,1371448452
+Wallets & Bags,2009,,,age_group_66+,8779981380
+Tops,2009,,,age_group_66+,8936051516
+Bottoms,2009,,,age_group_66+,11344349646
+Accessories,2009,,,age_group_66+,10206551873
+Watches,2009,,,age_group_66+,5840841610
+Phone upgrade,2009,,,age_group_66+,10259121961
+Home decor,2009,,,age_group_66+,7259090367
+Gadgets,2009,,,age_group_66+,3807256937
+Baby & Kids,2009,,,age_group_66+,5769214680
+Hobbies,2009,,,age_group_66+,10515725498
+Jewerly,2009,,,age_group_66+,4285201631
+Pets,2009,,,age_group_66+,3168022558
+Fashion,2010,,,age_group_66+,1155345137
+Shoes,2010,,,age_group_66+,8297110627
+Makeup & Beauty,2010,,,age_group_66+,11925737639
+Wallets & Bags,2010,,,age_group_66+,3464124091
+Tops,2010,,,age_group_66+,1495652486
+Bottoms,2010,,,age_group_66+,4204452118
+Accessories,2010,,,age_group_66+,4588765798
+Watches,2010,,,age_group_66+,10052177883
+Phone upgrade,2010,,,age_group_66+,7241630591
+Home decor,2010,,,age_group_66+,6156775507
+Gadgets,2010,,,age_group_66+,1984657521
+Baby & Kids,2010,,,age_group_66+,4602276998
+Hobbies,2010,,,age_group_66+,10412510055
+Jewerly,2010,,,age_group_66+,5870076579
+Pets,2010,,,age_group_66+,11221690164
+Fashion,2011,,,age_group_66+,8692702590
+Shoes,2011,,,age_group_66+,4228237289
+Makeup & Beauty,2011,,,age_group_66+,8052307975
+Wallets & Bags,2011,,,age_group_66+,6996295006
+Tops,2011,,,age_group_66+,3841671096
+Bottoms,2011,,,age_group_66+,9700962145
+Accessories,2011,,,age_group_66+,4364252800
+Watches,2011,,,age_group_66+,5895108390
+Phone upgrade,2011,,,age_group_66+,8486646972
+Home decor,2011,,,age_group_66+,3557221626
+Gadgets,2011,,,age_group_66+,7890424136
+Baby & Kids,2011,,,age_group_66+,2507232515
+Hobbies,2011,,,age_group_66+,1543967224
+Jewerly,2011,,,age_group_66+,2885183648
+Pets,2011,,,age_group_66+,5197425502
+Fashion,2012,,,age_group_66+,11151216511
+Shoes,2012,,,age_group_66+,10019626106
+Makeup & Beauty,2012,,,age_group_66+,8593818249
+Wallets & Bags,2012,,,age_group_66+,10594986517
+Tops,2012,,,age_group_66+,7635063714
+Bottoms,2012,,,age_group_66+,1798479730
+Accessories,2012,,,age_group_66+,713132800
+Watches,2012,,,age_group_66+,2682748134
+Phone upgrade,2012,,,age_group_66+,672029953
+Home decor,2012,,,age_group_66+,10242304729
+Gadgets,2012,,,age_group_66+,2698901938
+Baby & Kids,2012,,,age_group_66+,4932682569
+Hobbies,2012,,,age_group_66+,11547543494
+Jewerly,2012,,,age_group_66+,10901271161
+Pets,2012,,,age_group_66+,4246336964
+Fashion,2013,,,age_group_66+,3373116801
+Shoes,2013,,,age_group_66+,4859454304
+Makeup & Beauty,2013,,,age_group_66+,3346918668
+Wallets & Bags,2013,,,age_group_66+,3877393114
+Tops,2013,,,age_group_66+,5643155390
+Bottoms,2013,,,age_group_66+,7957659648
+Accessories,2013,,,age_group_66+,6336155569
+Watches,2013,,,age_group_66+,6981510673
+Phone upgrade,2013,,,age_group_66+,4487149153
+Home decor,2013,,,age_group_66+,2415464947
+Gadgets,2013,,,age_group_66+,2495658391
+Baby & Kids,2013,,,age_group_66+,7738754316
+Hobbies,2013,,,age_group_66+,5051557923
+Jewerly,2013,,,age_group_66+,3380478636
+Pets,2013,,,age_group_66+,11203338896
+Fashion,2014,,,age_group_66+,3504331903
+Shoes,2014,,,age_group_66+,7042980370
+Makeup & Beauty,2014,,,age_group_66+,11715809853
+Wallets & Bags,2014,,,age_group_66+,1586276392
+Tops,2014,,,age_group_66+,9718099638
+Bottoms,2014,,,age_group_66+,10216905758
+Accessories,2014,,,age_group_66+,10667260410
+Watches,2014,,,age_group_66+,3048544578
+Phone upgrade,2014,,,age_group_66+,5205104770
+Home decor,2014,,,age_group_66+,11685683498
+Gadgets,2014,,,age_group_66+,4089691086
+Baby & Kids,2014,,,age_group_66+,6323727951
+Hobbies,2014,,,age_group_66+,11188758268
+Jewerly,2014,,,age_group_66+,6433299401
+Pets,2014,,,age_group_66+,4374429397
+Fashion,2015,,,age_group_66+,3709497707
+Shoes,2015,,,age_group_66+,5146747931
+Makeup & Beauty,2015,,,age_group_66+,624625807
+Wallets & Bags,2015,,,age_group_66+,9514323899
+Tops,2015,,,age_group_66+,8546665670
+Bottoms,2015,,,age_group_66+,9378400977
+Accessories,2015,,,age_group_66+,1197625922
+Watches,2015,,,age_group_66+,1636926835
+Phone upgrade,2015,,,age_group_66+,8616193468
+Home decor,2015,,,age_group_66+,7016270767
+Gadgets,2015,,,age_group_66+,5960216310
+Baby & Kids,2015,,,age_group_66+,5912758637
+Hobbies,2015,,,age_group_66+,5990830205
+Jewerly,2015,,,age_group_66+,11030804535
+Pets,2015,,,age_group_66+,9782611018
+Fashion,2016,,,age_group_66+,3946141820
+Shoes,2016,,,age_group_66+,970843303
+Makeup & Beauty,2016,,,age_group_66+,10267175875
+Wallets & Bags,2016,,,age_group_66+,10257797638
+Tops,2016,,,age_group_66+,720071065
+Bottoms,2016,,,age_group_66+,2208345733
+Accessories,2016,,,age_group_66+,10453178969
+Watches,2016,,,age_group_66+,7740987733
+Phone upgrade,2016,,,age_group_66+,4385097466
+Home decor,2016,,,age_group_66+,7930877372
+Gadgets,2016,,,age_group_66+,2747054854
+Baby & Kids,2016,,,age_group_66+,1018681479
+Hobbies,2016,,,age_group_66+,6028062850
+Jewerly,2016,,,age_group_66+,7179903855
+Pets,2016,,,age_group_66+,5254011734
+Fashion,2017,,,age_group_66+,5538880024
+Shoes,2017,,,age_group_66+,4205795892
+Makeup & Beauty,2017,,,age_group_66+,1193438954
+Wallets & Bags,2017,,,age_group_66+,2023360285
+Tops,2017,,,age_group_66+,1477846548
+Bottoms,2017,,,age_group_66+,8908136731
+Accessories,2017,,,age_group_66+,4917560056
+Watches,2017,,,age_group_66+,5060425758
+Phone upgrade,2017,,,age_group_66+,5648948973
+Home decor,2017,,,age_group_66+,9561287479
+Gadgets,2017,,,age_group_66+,802687077
+Baby & Kids,2017,,,age_group_66+,774607916
+Hobbies,2017,,,age_group_66+,11098230712
+Jewerly,2017,,,age_group_66+,11301488429
+Pets,2017,,,age_group_66+,2323162511

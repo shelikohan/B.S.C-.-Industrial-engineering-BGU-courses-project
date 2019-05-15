@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_cW7WsAbZEemXafEyyryjnA" name="BI_8_MIR" id="_U17qcAbZEemXafEyyryjnA" label="BI_8_MIR" dataPackage="_cXIyEAbZEemXafEyyryjnA" DatabaseType="MySQL" DriverClass="org.gjt.mm.mysql.Driver" URL="jdbc:mysql://localhost:3306/BI_8_MIR?noDatetimeStringSync=true" dbVersionString="MYSQL_5" Port="3306" Username="root" Password="NZNgK6DuncI=" ServerName="localhost" DatasourceName="" FileFieldName="" SID="BI_8_MIR" SqlSynthax="SQL Syntax" DbmsId="mysql_id" ProductId="MYSQL" AdditionalParams="noDatetimeStringSync=true" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_cW7WsQbZEemXafEyyryjnA" tag="Is Conn Need Reload" value="false"/>
+    <taggedValue xmi:id="_cW_BEAbZEemXafEyyryjnA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_cW_oIAbZEemXafEyyryjnA" tag="Status" value=""/>
+    <taggedValue xmi:id="_cW_oIQbZEemXafEyyryjnA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_cW_oIgbZEemXafEyyryjnA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_cW_oIwbZEemXafEyyryjnA" tag="Description" value=""/>
+    <taggedValue xmi:id="_cW_oJAbZEemXafEyyryjnA" tag="Author" value=""/>
+    <taggedValue xmi:id="_cW_oJQbZEemXafEyyryjnA" tag="otherParameter"/>
+    <taggedValue xmi:id="_cXDSgAbZEemXafEyyryjnA" tag="DB ProductName" value="MySQL"/>
+    <taggedValue xmi:id="_cXDSgQbZEemXafEyyryjnA" tag="DB ProductVersion" value="5.6.25-log"/>
+    <taggedValue xmi:id="_cXDSggbZEemXafEyyryjnA" tag="DB IdentifierQuoteString" value="`"/>
+    <parameters xmi:id="_cW7WsgbZEemXafEyyryjnA" key="CONN_PARA_KEY_USERNAME" value="root"/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_cXIyEAbZEemXafEyyryjnA" name="BI_8_MIR" dataManager="_cW7WsAbZEemXafEyyryjnA"/>
+</xmi:XMI>
